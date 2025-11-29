@@ -48,7 +48,7 @@ export default function SeisLanding() {
                 id="best"
                 title="BEST Hakkında"
                 lead={
-                    "BEST (Board of European Students of Technology), Avrupa genelindeki mühendislik öğrencilerini bir araya getiren uluslararası bir organizasyondur. BEST, öğrencilere kültürel değişim, teknik kurslar, kariyer fırsatları ve sosyal ağ oluşturma imkânı sunar. SEIS, BEST ile iş birliği yaparak üyelerinin Avrupa genelinde etkinliklere katılmasını ve kendilerini global arenada geliştirmesini hedefler."
+                    "BEST (Board of European Students of Technology), Avrupa genelindeki mühendislik öğrencilerini bir araya getiren uluslararası bir organizasyondur. Öğrencilere kültürel değişim, teknik kurslar, kariyer fırsatları ve geniş bir sosyal ağ sunar.\n SEIS olarak, BEST’e Observer (Gözlemci) üye olmak için resmi başvuru sürecimizi yürütüyoruz. Bu süreçte amacımız, topluluğumuzu Avrupa çapında temsil etmek, öğrencilerimize uluslararası etkinliklere katılma imkânı sağlamak ve global arenada kendilerini geliştirebilecekleri bir yapı oluşturmaktır."
                 }
             />
 
@@ -56,7 +56,8 @@ export default function SeisLanding() {
             <Section id="etkinlikler" title="Etkinlikler">
                 <CardGrid>
                     <Card title="Teknoloji Zirvesi 2025" text="Alanında uzman konuşmacılarla teknoloji trendlerini keşfedeceğimiz büyük buluşma." />
-                    <Card title="MUN26" text="Model United Nations 2026 ile üniversitedeki en büyük etkinliği yapmayı hedefliyoruz." />
+                    <Card title="MUN’26 – Model United Nations
+" text="SEIS olarak düzenleyeceğimiz MUN’26 etkinliğinde; öğrenciler uluslararası diplomasi, kriz yönetimi ve müzakere becerilerini deneyimleyecekleri komitelerde bir araya geliyor." />
                     <Card title="Atölye & Workshop" text="Pratik mühendislik becerileri kazanmanız için uygulamalı eğitimler." />
                 </CardGrid>
             </Section>
