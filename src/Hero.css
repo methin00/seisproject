@@ -1,20 +1,33 @@
 .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    /* Arkaplan resmini buraya koyuyoruz. public klasöründeki bir resim için /resimadi.png yeterlidir */
+    background-image: url('/seisteam.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    height: 90vh; /* Ekranın %90'ını kaplasın */
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
 
+/* Resmin üzerine gelen siyah şeffaf katman */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* %60 koyuluk */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-/* Yazıların daha net görünmesi için hafif karartma */
-.overlay {
-    background: rgba(0, 0, 0, 0.45);
-    padding: 40px;
-    border-radius: 12px;
-    color: white;
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 1; /* Yazıları öne çıkar */
 }

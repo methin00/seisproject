@@ -1,60 +1,216 @@
-/* Reset & base */
+/* --- Reset & Base --- */
+:root {
+    --primary-color: #0056b3; /* SEIS Mavisi */
+    --secondary-color: #111;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff; color: #111; line-height: 1.6; }
-a { color: inherit; text-decoration: none; }
+body { 
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; 
+    background: var(--light-bg); 
+    color: var(--text-color); 
+    line-height: 1.6; 
+}
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
 
+/* --- Header --- */
+header.site-header { 
+    background: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #eaeaea; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
 
-/* Header */
-header.site-header { background:#fff; padding:20px 40px; border-bottom:1px solid #eee; display:flex; justify-content:center; position:sticky; top:0; z-index:100; }
-.site-nav a { margin:0 15px; font-weight:500; position:relative; }
-.site-nav a::after { content:""; position:absolute; bottom:-5px; left:0; width:0; height:2px; background:#111; transition:0.3s; }
-.site-nav a:hover::after { width:100%; }
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
+/* Logo Alanı */
+.site-logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.site-logo img { height: 40px; } /* Logo resmi eklenirse boyutu */
 
-/* Hero */
-.hero { min-height:80vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:40px; }
-.hero h1 { font-size:2.8rem; font-weight:800; margin-bottom:15px; opacity:0; animation:fadeUp 1s forwards; }
-.hero p { font-size:1.2rem; max-width:600px; color:#555; opacity:0; animation:fadeUp 1s 0.4s forwards; }
+/* Navigasyon */
+.site-nav { display: flex; align-items: center; gap: 20px; }
 
+.site-nav a { 
+    font-weight: 500; 
+    font-size: 0.95rem; 
+    color: var(--secondary-color);
+    position: relative;
+}
 
-/* Sections */
-section.section { padding:80px 20px; max-width:1100px; margin:auto; }
-.section__title { font-size:2rem; margin-bottom:20px; font-weight:bold; text-align:center; }
-.section__lead { text-align:center; color:#555; max-width:800px; margin:0 auto 40px; }
+.site-nav a:not(.nav-btn):hover { color: var(--primary-color); }
 
+/* Özel Buton Görünümlü Link (Üye Ol) */
+.site-nav .nav-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+.site-nav .nav-btn:hover {
+    background: #004494;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 86, 179, 0.3);
+}
 
-/* Cards */
-.card-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:30px; }
-.card { background:#fff; border-radius:10px; padding:25px; box-shadow:0 5px 15px rgba(0,0,0,0.05); transition:transform 0.3s, box-shadow 0.3s; opacity:0; transform:translateY(20px); }
-.card.visible { animation:fadeUp 0.8s forwards; }
-.card:hover { transform:translateY(-5px); box-shadow:0 10px 25px rgba(0,0,0,0.1); }
-.card h3 { margin-bottom:10px; font-size:1.3rem; }
-.card p { font-size:0.95rem; color:#666; }
+/* --- Hero Typography --- */
+.hero h1 { 
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    margin-bottom: 20px; 
+    line-height: 1.2;
+    animation: fadeUp 1s forwards; 
+}
+.hero p { 
+    font-size: 1.25rem; 
+    margin-bottom: 30px; 
+    opacity: 0.9; 
+    max-width: 700px; 
+    margin-left: auto; 
+    margin-right: auto;
+    animation: fadeUp 1s 0.2s forwards; 
+}
 
+/* --- Sections --- */
+section.section { 
+    padding: 100px 20px; 
+    max-width: 1200px; 
+    margin: auto; 
+}
 
-/* Buttons */
-.btn { display:inline-block; padding:12px 20px; border-radius:8px; border:1px solid #111; background:#111; color:#fff; font-weight:600; cursor:pointer; }
-.btn:disabled { opacity:0.6; cursor:not-allowed; }
+.section__title { 
+    font-size: 2.2rem; 
+    margin-bottom: 15px; 
+    font-weight: 700; 
+    text-align: center; 
+    color: var(--secondary-color);
+}
 
+.section__lead { 
+    text-align: center; 
+    color: #666; 
+    max-width: 800px; 
+    margin: 0 auto 50px; 
+    font-size: 1.1rem;
+}
 
-/* Footer */
-.site-footer { background:#111; color:#fff; padding:30px 20px; text-align:center; margin-top:50px; }
-.site-footer a { color:#aaa; margin:0 10px; font-size:0.9rem; }
-.site-footer a:hover { color:#fff; }
+/* --- Cards --- */
+.card-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+}
 
+.card { 
+    background: var(--white); 
+    border-radius: 16px; 
+    padding: 30px; 
+    border: 1px solid #eee;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02); 
+    transition: var(--transition);
+    opacity: 0; /* Animasyon için */
+    transform: translateY(20px);
+}
 
-/* Animations */
-@keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
+/* Card Animasyonu (Görünür olduğunda) */
+.card.visible { animation: fadeUp 0.6s forwards; }
 
+.card:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08); 
+    border-color: transparent;
+}
 
-/* Reveal utility */
-[data-reveal] { opacity: 0; transform: translateY(20px); }
-[data-reveal].visible { opacity: 1; transform: translateY(0); transition: opacity .6s ease, transform .6s ease; }
+.card h3 { 
+    margin-bottom: 15px; 
+    font-size: 1.4rem; 
+    color: var(--secondary-color);
+}
+.card p { 
+    font-size: 1rem; 
+    color: #555; 
+    line-height: 1.7;
+}
 
+/* --- Buttons --- */
+.btn { 
+    display: inline-block; 
+    padding: 14px 32px; 
+    border-radius: 8px; 
+    background: var(--secondary-color); 
+    color: var(--white); 
+    font-weight: 600; 
+    border: none;
+    cursor: pointer; 
+    transition: var(--transition);
+    font-size: 1rem;
+}
+.btn:hover { 
+    background: #333; 
+    transform: translateY(-2px); 
+}
+.btn-primary {
+    background: var(--primary-color);
+    border-radius: 50px;
+}
+.btn-primary:hover {
+    background: #004494;
+}
 
-/* Responsive */
-@media (max-width: 600px) {
-header.site-header { flex-direction: column; }
-.site-nav a { display: block; margin: 10px 0; }
+/* --- Footer --- */
+.site-footer { 
+    background: #1a1a1a; 
+    color: #ccc; 
+    padding: 60px 20px; 
+    text-align: center; 
+    margin-top: 80px; 
+}
+.site-footer p { margin-bottom: 15px; opacity: 0.7; }
+.site-footer a { 
+    color: #fff; 
+    margin: 0 15px; 
+    font-size: 0.9rem; 
+    opacity: 0.6;
+}
+.site-footer a:hover { opacity: 1; text-decoration: underline; }
+
+/* --- Utilities & Animation --- */
+@keyframes fadeUp { 
+    to { opacity: 1; transform: translateY(0); } 
+}
+
+[data-reveal] { opacity: 0; transform: translateY(30px); }
+[data-reveal].visible { opacity: 1; transform: translateY(0); transition: opacity .8s cubic-bezier(0.5, 0, 0, 1), transform .8s cubic-bezier(0.5, 0, 0, 1); }
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; gap: 15px; }
+    .site-nav { flex-wrap: wrap; justify-content: center; gap: 15px; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero p { font-size: 1rem; }
 }

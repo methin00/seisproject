@@ -1,15 +1,20 @@
 import React from "react";
-import "../Hero.css"
+import "../Hero.css";
 
 export default function Hero() {
     return (
         <section className="hero">
-            <div>
-                <h1>Sakarya Engineering Innovation Society</h1>
-                <p>
-                    Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen
-                    Sakarya Üniversitesi öğrencileri topluluğu.
-                </p>
+            <div className="hero-overlay">
+                <div className="hero-content">
+                    <h1>Sakarya Engineering Innovation Society</h1>
+                    <p>
+                        Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen
+                        Sakarya Üniversitesi öğrencileri topluluğu.
+                    </p>
+                    <div className="hero-buttons">
+                        <a href="#hakkinda" className="btn btn-primary">Daha Fazla Keşfet</a>
+                    </div>
+                </div>
             </div>
         </section>
     );
