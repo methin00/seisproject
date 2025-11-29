@@ -56,7 +56,7 @@ export default function SeisLanding() {
             <Section id="etkinlikler" title="Etkinlikler">
                 <CardGrid>
                     <Card title="Teknoloji Zirvesi 2025" text="Alanında uzman konuşmacılarla teknoloji trendlerini keşfedeceğimiz büyük buluşma." />
-                    <Card title="Yurt Dışı Değişim Programı" text="BEST ve diğer uluslararası mühendislik organizasyonlarının fırsatlarını tanıtıyoruz." />
+                    <Card title="MUN26" text="Model United Nations 2026 ile üniversitedeki en büyük etkinliği yapmayı hedefliyoruz." />
                     <Card title="Atölye & Workshop" text="Pratik mühendislik becerileri kazanmanız için uygulamalı eğitimler." />
                 </CardGrid>
             </Section>
@@ -78,7 +78,7 @@ export default function SeisLanding() {
                     E-posta: <a href="mailto:info@infoseis.com">info@infoseis.com</a>
                 </p>
                 <p className="section__lead" data-reveal>
-                    Instagram: <a href="https://instagram.com" target="_blank" rel="noreferrer">@seis.sakarya</a>
+                    Instagram: <a href="https://instagram.com/seis_eu" target="_blank" rel="noreferrer">@seis_eu</a>
                 </p>
             </Section>
 
