@@ -43,15 +43,6 @@ export default function SeisLanding() {
                 </CardGrid>
             </Section>
 
-            {/* BEST */}
-            <Section
-                id="best"
-                title="BEST Hakkında"
-                lead={
-                    "BEST (Board of European Students of Technology), Avrupa genelindeki mühendislik öğrencilerini bir araya getiren uluslararası bir organizasyondur. Öğrencilere kültürel değişim, teknik kurslar, kariyer fırsatları ve geniş bir sosyal ağ sunar.\n SEIS olarak, BEST’e Observer (Gözlemci) üye olmak için resmi başvuru sürecimizi yürütüyoruz. Bu süreçte amacımız, topluluğumuzu Avrupa çapında temsil etmek, öğrencilerimize uluslararası etkinliklere katılma imkânı sağlamak ve global arenada kendilerini geliştirebilecekleri bir yapı oluşturmaktır."
-                }
-            />
-
             {/* Etkinlikler */}
             <Section id="etkinlikler" title="Etkinlikler">
                 <CardGrid>
