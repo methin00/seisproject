@@ -16,7 +16,6 @@ export default function Header() {
                 <nav className="site-nav">
                     <a href="#hakkinda">Hakkında</a>
                     <a href="#misyon-vizyon">Misyon & Vizyon</a>
-                    <a href="#best">BEST</a>
                     <a href="#etkinlikler">Etkinlikler</a>
                     <a href="#iletisim">İletişim</a>
                     <a href="#uye-ol" className="nav-btn">Üye Ol</a>
