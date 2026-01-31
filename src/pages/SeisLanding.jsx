@@ -18,62 +18,63 @@ export default function SeisLanding() {
     return (
         <div>
             <Header />
-            <Hero />
+            <main>
+                <Hero />
 
-            {/* Hakkında */}
-            <Section
-                id="hakkinda"
-                title="Hakkımızda"
-                lead={
-                    "SEIS, mühendislik öğrencilerinin teknik, kişisel ve uluslararası gelişimini destekleyen bir topluluktur. Üyelerimize mühendislik alanındaki güncel gelişmeleri takip etme, ulusal ve uluslararası etkinliklere katılma, proje geliştirme ve farklı kültürlerden insanlarla iş birliği yapma fırsatları sunuyoruz."
-                }
-            />
+                {/* Hakkında */}
+                <Section
+                    id="hakkinda"
+                    title="Hakkımızda"
+                    lead={
+                        "SEIS, mühendislik öğrencilerinin teknik, kişisel ve uluslararası gelişimini destekleyen bir topluluktur. Üyelerimize mühendislik alanındaki güncel gelişmeleri takip etme, ulusal ve uluslararası etkinliklere katılma, proje geliştirme ve farklı kültürlerden insanlarla iş birliği yapma fırsatları sunuyoruz."
+                    }
+                />
 
-            {/* Misyon & Vizyon */}
-            <Section id="misyon-vizyon" title="Misyon & Vizyon">
-                <CardGrid>
-                    <Card
-                        title="Misyonumuz"
-                        text="Öğrencilerin teknik bilgi, liderlik, iletişim ve takım çalışması becerilerini geliştirebilecekleri bir ortam yaratmak; mühendislikte yenilikçi ve sürdürülebilir çözümler üretmelerine destek olmak."
-                    />
-                    <Card
-                        title="Vizyonumuz"
-                        text="Sakarya Üniversitesi’ni ulusal ve uluslararası platformlarda mühendislikte öncü bir marka haline getirmek ve geleceğin lider mühendislerini yetiştirmek."
-                    />
-                </CardGrid>
-            </Section>
+                {/* Misyon & Vizyon */}
+                <Section id="misyon-vizyon" title="Misyon & Vizyon">
+                    <CardGrid>
+                        <Card
+                            title="Misyonumuz"
+                            text="Öğrencilerin teknik bilgi, liderlik, iletişim ve takım çalışması becerilerini geliştirebilecekleri bir ortam yaratmak; mühendislikte yenilikçi ve sürdürülebilir çözümler üretmelerine destek olmak."
+                        />
+                        <Card
+                            title="Vizyonumuz"
+                            text="Sakarya Üniversitesi’ni ulusal ve uluslararası platformlarda mühendislikte öncü bir marka haline getirmek ve geleceğin lider mühendislerini yetiştirmek."
+                        />
+                    </CardGrid>
+                </Section>
 
-            {/* Etkinlikler */}
-            <Section id="etkinlikler" title="Etkinlikler">
-                <CardGrid>
-                    <Card title="Teknoloji Zirvesi 2025" text="Alanında uzman konuşmacılarla teknoloji trendlerini keşfedeceğimiz büyük buluşma." />
-                    <Card title="MUN’26 – Model United Nations
+                {/* Etkinlikler */}
+                <Section id="etkinlikler" title="Etkinlikler">
+                    <CardGrid>
+                        <Card title="Teknoloji Zirvesi 2025" text="Alanında uzman konuşmacılarla teknoloji trendlerini keşfedeceğimiz büyük buluşma." />
+                        <Card title="MUN’26 – Model United Nations
 " text="SEIS olarak düzenleyeceğimiz MUN’26 etkinliğinde; öğrenciler uluslararası diplomasi, kriz yönetimi ve müzakere becerilerini deneyimleyecekleri komitelerde bir araya geliyor." />
-                    <Card title="Atölye & Workshop" text="Pratik mühendislik becerileri kazanmanız için uygulamalı eğitimler." />
-                </CardGrid>
-            </Section>
+                        <Card title="Atölye & Workshop" text="Pratik mühendislik becerileri kazanmanız için uygulamalı eğitimler." />
+                    </CardGrid>
+                </Section>
 
-            {/* Üye Ol */}
-            <Section
-                id="uye-ol"
-                title="Üye Ol"
-                lead="SEIS ailesine katılmak, etkinliklere katılmak ve kendini geliştirmek için başvurunu hemen yap."
-            >
-                <div style={{ textAlign: "center", marginTop: 16 }}>
-                    <button className="btn" onClick={handleApplyClick}>Başvuru Yap</button>
-                </div>
-            </Section>
+                {/* Üye Ol */}
+                <Section
+                    id="uye-ol"
+                    title="Üye Ol"
+                    lead="SEIS ailesine katılmak, etkinliklere katılmak ve kendini geliştirmek için başvurunu hemen yap."
+                >
+                    <div style={{ textAlign: "center", marginTop: 16 }}>
+                        <button className="btn btn-primary" onClick={handleApplyClick}>Başvuru Yap</button>
+                    </div>
+                </Section>
 
-            {/* İletişim */}
-            <Section id="iletisim" title="İletişim">
-                <p className="section__lead" data-reveal>
-                    E-posta: <a href="mailto:info@infoseis.com">info@infoseis.com</a>
-                </p>
-                <p className="section__lead" data-reveal>
-                    Instagram: <a href="https://instagram.com/seis_eu" target="_blank" rel="noreferrer">@seis_eu</a>
-                </p>
-            </Section>
-
+                {/* İletişim */}
+                <Section id="iletisim" title="İletişim">
+                    <p className="section__lead" data-reveal>
+                        E-posta: <a href="mailto:info@infoseis.com">info@infoseis.com</a>
+                    </p>
+                    <p className="section__lead" data-reveal>
+                        Instagram: <a href="https://instagram.com/seis_eu" target="_blank" rel="noreferrer">@seis_eu</a>
+                    </p>
+                </Section>
+            </main>
             <Footer />
         </div>
     );
