@@ -435,6 +435,10 @@ section:nth-of-type(even) {
     .card-grid {
         grid-template-columns: 1fr;
     }
+
+    .social-text {
+        display: none;
+    }
 }
 
 /* --- Animations --- */

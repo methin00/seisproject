@@ -46,10 +46,10 @@ export default function Contact() {
                         <p>{t('contact.socialMediaText')}</p>
                         <div style={{ display: 'flex', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
                             <a href="https://instagram.com/seis_eu" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <FaInstagram /> Instagram
+                                <FaInstagram /> <span className="social-text">Instagram</span>
                             </a>
                             <a href="https://www.linkedin.com/company/sakarya-engineering-innovation-society-seis/" target="_blank" rel="noreferrer" className="btn btn-secondary" style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <FaLinkedin /> LinkedIn
+                                <FaLinkedin /> <span className="social-text">LinkedIn</span>
                             </a>
                         </div>
                     </div>

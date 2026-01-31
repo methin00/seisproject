@@ -8,47 +8,47 @@ import { useLanguage } from "../context/LanguageContext";
 
 const boardMembers = [
     {
-        name: "Ensar Davut",
+        id: "ensarDavut",
+        name: "Ensar Davud",
         role: "president",
         department: "Elektrik Elektronik Mühendisliği",
         email: "Mailim de ensar.davud@ogr.sakarya.edu.tr",
-        about: "Ensar Davud, Sakarya Üniversitesi Elektrik-Elektronik Mühendisliği öğrencisi ve Sakarya Engineering & Innovation Society (SEIS)’in kurucusu ile 1. dönem başkanıdır. SEIS’i; öğrencilerin yalnızca akademik değil, aynı zamanda vizyon, liderlik ve üretkenlik açısından da gelişebileceği bir yapı oluşturmak amacıyla kurmuştur. Hedefi, öğrencileri potansiyellerini keşfeden, sorumluluk alan ve kariyerlerini bilinçli şekilde inşa eden bireyler haline getirmektir.",
         img: "https://via.placeholder.com/200",
         bio: "Mailim de ensar.davud@ogr.sakarya.edu.tr"
     },
     {
+        id: "gokhanBatinUygun",
         name: "Gökhan Batın Uygun",
         role: "vicePresident",
         department: "Elektrik Elektronik Mühendisliği",
         email: "gokhan.uygun@ogr.sakarya.edu.tr",
-        about: "İstanbul doğumlu, Karadenizli bir EEM öğrencisi ve SEIS Başkan Yardımcısı. Mühendislik eğitimini futbol ve fitness ile kazandığı disiplinle destekleyen; enerjisini ve teknik vizyonunu kulübünün geleceği için kullanan bir teknoloji tutkunu.",
         img: "https://via.placeholder.com/200",
         bio: "gokhan.uygun@ogr.sakarya.edu.tr"
     },
     {
+        id: "gurselGecir",
         name: "Gürsel Gecir",
         role: "hr",
         department: "Elektrik Elektronik Mühendisliği",
         email: "gursel.gecir@infoseis.com",
-        about: "İnsan kaynakları ve yetenek yönetimi süreçlerini yönetmektedir. Yeni üyelerin adaptasyonu ve kişisel gelişimleri için eğitimler düzenler. Ekip dinamiklerini analiz ederek verimliliği artırmayı hedefler. Kariyer planlaması ve mentorluk konularında deneyimlidir. Pozitif bir çalışma ortamı oluşturmak için çaba sarf etmektedir.",
         img: "https://via.placeholder.com/200",
         bio: "gursel.gecir@infoseis.com"
     },
     {
+        id: "enesAtaman",
         name: "Enes Ataman",
         role: "event",
         department: "Elektrik Elektronik Mühendisliği",
         email: "enes.ataman@infoseis.com",
-        about: "Etkinlik planlama ve uygulama süreçlerinin lideridir. Sosyal ve teknik etkinliklerin baştan sona koordinasyonunu sağlar. Sponsorluk ve lojistik süreçlerini titizlikle yönetir. Yaratıcı konseptler geliştirerek unutulmaz deneyimler yaratmayı hedefler. Kriz yönetimi ve bütçe planlaması konularında uzmandır.",
         img: "https://via.placeholder.com/200",
         bio: "enes.ataman@infoseis.com"
     },
     {
+        id: "halilBodur",
         name: "Halil Bodur",
         role: "fund",
         department: "Makine Mühendisliği",
         email: "halil.bodur@infoseis.com",
-        about: "Kulübün finansal sürdürülebilirliğini sağlamak için kaynak geliştirir. Sponsorluk ilişkilerini yönetir ve yeni ortaklıklar kurar. Bütçe yönetimi ve finansal raporlama konularında sorumluluk alır. Stratejik ortaklıklar aracılığıyla projelerimize değer katar. Girişimci ruhuyla yeni fon kaynakları yaratma konusunda başarılıdır.",
         img: "https://via.placeholder.com/200",
         bio: "halil.bodur@infoseis.com"
     },
@@ -61,7 +61,10 @@ export default function Board() {
     const { t } = useLanguage();
 
     const openMemberDetails = (member) => {
-        setSelectedMember(member);
+        setSelectedMember({
+            ...member,
+            about: t(`board.members.${member.id}.about`)
+        });
     };
 
     const closeMemberDetails = () => {
