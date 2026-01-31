@@ -12,9 +12,9 @@ const boardMembers = [
         name: "Ensar Davud",
         role: "president",
         department: "Elektrik Elektronik Mühendisliği",
-        email: "Mailim de ensar.davud@ogr.sakarya.edu.tr",
+        email: "ensar.davud@ogr.sakarya.edu.tr",
         img: "https://via.placeholder.com/200",
-        bio: "Mailim de ensar.davud@ogr.sakarya.edu.tr"
+        bio: "ensar.davud@ogr.sakarya.edu.tr"
     },
     {
         id: "gokhanBatinUygun",

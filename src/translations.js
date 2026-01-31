@@ -164,7 +164,7 @@ export const translations = {
             about: "About Us",
             mission: "Mission & Vision",
             events: "Events",
-            board: "Board of Directors",
+            board: "Board",
             team: "Our Team",
             sponsors: "Our Sponsors",
             contact: "Contact",
@@ -197,7 +197,7 @@ export const translations = {
             }
         },
         board: {
-            title: "Board of Directors",
+            title: "Board",
             description: "The management team taking strategic decisions for our club.",
             clickInfo: "Click for Details",
             roles: {
