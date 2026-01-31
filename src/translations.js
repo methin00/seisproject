@@ -47,6 +47,13 @@ export const translations = {
                 hr: "Recruitment & Development Executive",
                 event: "Event Coordinator",
                 fund: "Fundraising Coordinator"
+            },
+            members: {
+                ensarDavut: { about: "Ensar Davud, Sakarya Üniversitesi Elektrik-Elektronik Mühendisliği öğrencisi ve Sakarya Engineering & Innovation Society (SEIS)’in kurucusu ile 1. dönem başkanıdır. SEIS’i; öğrencilerin yalnızca akademik değil, aynı zamanda vizyon, liderlik ve üretkenlik açısından da gelişebileceği bir yapı oluşturmak amacıyla kurmuştur. Hedefi, öğrencileri potansiyellerini keşfeden, sorumluluk alan ve kariyerlerini bilinçli şekilde inşa eden bireyler haline getirmektir." },
+                gokhanBatinUygun: { about: "İstanbul doğumlu, Karadenizli bir EEM öğrencisi ve SEIS Başkan Yardımcısı. Mühendislik eğitimini futbol ve fitness ile kazandığı disiplinle destekleyen; enerjisini ve teknik vizyonunu kulübünün geleceği için kullanan bir teknoloji tutkunu." },
+                gurselGecir: { about: "Aslen Giresunlu, Sakarya Üniversitesi EEM 2. sınıf öğrencisi ve SEIS Kurucu Üyesi. İnsan Kaynakları departmanında üye alımından sorumlu olan Gürsel, kulübün iç dinamiklerini yöneten ve departmanlar arası iletişimi sağlayan stratejik bir rol üstlenmektedir. Sosyal kişiliği ve sportif yaşam tarzıyla ekibine enerji katan bir teknoloji ve yönetim tutkunudur." },
+                enesAtaman: { about: "Etkinlik planlama ve uygulama süreçlerinin lideridir. Sosyal ve teknik etkinliklerin baştan sona koordinasyonunu sağlar. Sponsorluk ve lojistik süreçlerini titizlikle yönetir. Yaratıcı konseptler geliştirerek unutulmaz deneyimler yaratmayı hedefler. Kriz yönetimi ve bütçe planlaması konularında uzmandır." },
+                halilBodur: { about: "Kulübün finansal sürdürülebilirliğini sağlamak için kaynak geliştirir. Sponsorluk ilişkilerini yönetir ve yeni ortaklıklar kurar. Bütçe yönetimi ve finansal raporlama konularında sorumluluk alır. Stratejik ortaklıklar aracılığıyla projelerimize değer katar. Girişimci ruhuyla yeni fon kaynakları yaratma konusunda başarılıdır." }
             }
         },
         team: {
@@ -206,6 +213,13 @@ export const translations = {
                 hr: "Recruitment & Development Executive",
                 event: "Event Coordinator",
                 fund: "Fundraising Coordinator"
+            },
+            members: {
+                ensarDavut: { about: "Ensar Davud is a student of Electrical-Electronics Engineering at Sakarya University, the founder and 1st term president of Sakarya Engineering & Innovation Society (SEIS). He founded SEIS to create a structure where students can develop not only academically but also in terms of vision, leadership, and productivity. His goal is to raise individuals who discover their potential, take responsibility, and consciously build their careers." },
+                gokhanBatinUygun: { about: "Born in Istanbul, an EEE student and SEIS Vice President. A technology enthusiast who supports his engineering education with the discipline gained from football and fitness; utilizing his energy and technical vision for the future of the club." },
+                gurselGecir: { about: "Originally from Giresun, a 2nd-year EEE student at Sakarya University and a Founding Member of SEIS. Responsible for member recruitment in the Human Resources department, Gürsel plays a strategic role in managing the club's internal dynamics and ensuring inter-departmental communication. He is a technology and management enthusiast who adds energy to his team with his social personality and sporty lifestyle." },
+                enesAtaman: { about: "Leader of event planning and execution processes. Ensures end-to-end coordination of social and technical events. Meticulously manages sponsorship and logistics processes. Aims to create unforgettable experiences by developing creative concepts. Expert in crisis management and budget planning." },
+                halilBodur: { about: "Develops resources to ensure the financial sustainability of the club. Manages sponsorship relations and establishes new partnerships. Takes responsibility for budget management and financial reporting. Adds value to our projects through strategic partnerships. Successful in creating new funding sources with an entrepreneurial spirit." }
             }
         },
         team: {

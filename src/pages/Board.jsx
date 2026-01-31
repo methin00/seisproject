@@ -30,9 +30,9 @@ const boardMembers = [
         name: "Gürsel Gecir",
         role: "hr",
         department: "Elektrik Elektronik Mühendisliği",
-        email: "gursel.gecir@infoseis.com",
+        email: "gursel.gecir@ogr.sakarya.edu.tr",
         img: "https://via.placeholder.com/200",
-        bio: "gursel.gecir@infoseis.com"
+        bio: "gursel.gecir@ogr.sakarya.edu.tr"
     },
     {
         id: "enesAtaman",
