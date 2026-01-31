@@ -12,7 +12,7 @@ export default function Hero() {
                 </p>
                 <div className="hero-buttons">
                     <Link to="/hakkimizda">
-                        <a className="btn btn-primary">Hakkımızda</a>
+                        <a className="btn btn-primary">Daha Fazla Keşfet</a>
                     </Link>
                 </div>
             </div>
