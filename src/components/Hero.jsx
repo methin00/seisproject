@@ -10,7 +10,7 @@ export default function Hero() {
                     Sakarya Üniversitesi öğrencileri topluluğu.
                 </p>
                 <div className="hero-buttons">
-                    <a href="#hakkinda" className="btn btn-primary">Daha Fazla Keşfet</a>
+                    <a href="hakkimizda" className="btn btn-primary">Daha Fazla Keşfet</a>
                 </div>
             </div>
         </section>
