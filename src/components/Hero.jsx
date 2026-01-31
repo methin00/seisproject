@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
     return (
@@ -10,7 +11,9 @@ export default function Hero() {
                     Sakarya Üniversitesi öğrencileri topluluğu.
                 </p>
                 <div className="hero-buttons">
-                    <a href="/hakkimizda" className="btn btn-primary">Daha Fazla Keşfet</a>
+                    <Link to="/hakkimizda">
+                        <a className="btn btn-primary">Hakkımızda</a>
+                    </Link>
                 </div>
             </div>
         </section>
