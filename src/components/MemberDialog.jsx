@@ -28,7 +28,11 @@ export default function MemberDialog({ member, isOpen, onClose }) {
                         </div>
                         <div className="modal-title">
                             <h2>{member.name}</h2>
-                            <p>{t(`board.roles.${member.role}`) || member.role}</p>
+                            <p>{(() => {
+                                const roleKey = `board.roles.${member.role}`;
+                                const translated = t(roleKey);
+                                return translated === roleKey ? member.role : translated;
+                            })()}</p>
                         </div>
                     </div>
 
