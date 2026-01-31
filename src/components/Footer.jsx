@@ -1,11 +1,15 @@
 import React from "react";
+import { useLanguage } from "../context/LanguageContext";
 
 
 export default function Footer() {
+    const { t, language } = useLanguage();
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className="site-footer">
-            <p>© 2026 SEIS. Tüm hakları saklıdır.</p>
-            <p>Powered by SEIS IT Team</p>
+            <p>© {currentYear} SEIS. {language === 'en' ? 'All rights reserved.' : 'Tüm hakları saklıdır.'}</p>
+            <p>{t('footer.powered')}</p>
         </footer>
     );
 }

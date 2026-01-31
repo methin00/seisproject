@@ -2,6 +2,7 @@ import React from "react";
 import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
+import { useLanguage } from "../context/LanguageContext";
 
 const sponsors = [
     "Sponsor 1", "Sponsor 2", "Sponsor 3", "Sponsor 4",
@@ -10,12 +11,13 @@ const sponsors = [
 
 export default function Sponsors() {
     useRevealOnScroll();
+    const { t } = useLanguage();
 
     return (
         <div>
             <PageHeader
-                title="Sponsorlarımız"
-                description="Bize destek veren ve büyümemize katkı sağlayan değerli iş ortaklarımız."
+                title={t('sponsors.title')}
+                description={t('sponsors.description')}
             />
 
             <Section id="sponsors">
@@ -43,11 +45,11 @@ export default function Sponsors() {
                 </div>
 
                 <div style={{ marginTop: '4rem', textAlign: 'center' }} data-reveal>
-                    <h3>Sponsor Olmak İster misiniz?</h3>
+                    <h3>{t('sponsors.becomeSponsorTitle')}</h3>
                     <p style={{ maxWidth: '600px', margin: '1rem auto' }}>
-                        Geleceğin mühendislerine destek olmak ve markanızı üniversite gençliği ile buluşturmak için bizimle iletişime geçin.
+                        {t('sponsors.becomeSponsorText')}
                     </p>
-                    <a href="mailto:info@infoseis.com" className="btn btn-primary">İletişime Geç</a>
+                    <a href="mailto:info@infoseis.com" className="btn btn-primary">{t('sponsors.contactBtn')}</a>
                 </div>
             </Section>
         </div>

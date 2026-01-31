@@ -1,0 +1,296 @@
+export const translations = {
+    tr: {
+        nav: {
+            home: "Ana Sayfa",
+            about: "Hakkımızda",
+            mission: "Misyon & Vizyon",
+            events: "Etkinlikler",
+            board: "Yönetim Kurulu",
+            team: "Ekibimiz",
+            sponsors: "Sponsorlarımız",
+            contact: "İletişim",
+            apply: "Başvuru Yap"
+        },
+        hero: {
+            title: "Sakarya Engineering Innovation Society",
+            subtitle: "Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen Sakarya Üniversitesi öğrencileri topluluğu.",
+            discover: "Daha Fazla Keşfet"
+        },
+        home: {
+            welcomeTitle: "Hoşgeldiniz",
+            welcomeLead: "Geleceğin mühendislerini bir araya getiren topluluk.",
+            cards: {
+                about: {
+                    title: "Hakkımızda",
+                    text: "SEIS'in geçmişi ve amacı hakkında daha fazla bilgi edinin.",
+                    btn: "Devamını Oku"
+                },
+                events: {
+                    title: "Etkinlikler",
+                    text: "Yıl boyunca düzenlediğimiz etkinliklere göz atın.",
+                    btn: "İncele"
+                },
+                join: {
+                    title: "Ailemize Katılın",
+                    text: "Siz de bu dinamik ekibin bir parçası olmak ister misiniz?",
+                    btn: "Başvuru Yap"
+                }
+            }
+        },
+        board: {
+            title: "Yönetim Kurulu",
+            description: "Kulübümüzün stratejik kararlarını alan yönetim kadrosu.",
+            clickInfo: "Detaylı Bilgi İçin Tıkla",
+            roles: {
+                president: "President",
+                vicePresident: "Vice President",
+                hr: "Recruitment & Development Executive",
+                event: "Event Coordinator",
+                fund: "Fundraising Coordinator"
+            }
+        },
+        team: {
+            title: "Ekibimiz",
+            description: "Yenilikçi projelerin arkasındaki dinamik kadro.",
+            clickInfo: "Detaylı Bilgi İçin Tıkla",
+            sectionTitle: "Ekip Üyeleri"
+        },
+        dialog: {
+            email: "E-posta",
+            department: "Bölüm",
+            about: "Hakkında",
+            notSpecified: "Belirtilmedi",
+            noInfo: "Hakkında bilgi bulunmamaktadır."
+        },
+        footer: {
+            powered: "Powered by SEIS IT Team"
+        },
+        about: {
+            title: "Hakkımızda",
+            description: "Vizyon, Üretkenlik ve Gelecek",
+            content: [
+                "Sakarya Engineering & Innovation Society (SEIS), öğrencilerin yalnızca akademik bilgiyle değil; vizyon, üretkenlik ve sorumluluk bilinciyle gelişmesini hedefleyen bir öğrenci topluluğudur. SEIS, mühendislik ve inovasyon odağında düşünen, üreten ve geleceğini bilinçli şekilde inşa etmek isteyen öğrenciler için bir gelişim ekosistemi oluşturmak amacıyla kurulmuştur.",
+                "SEIS, öğrenciliğin yalnızca derslerden ve sınavlardan ibaret olmadığını savunur. Akademik bilginin; doğru vizyon, doğru çevre ve doğru fırsatlarla birleştiğinde gerçek değerini bulduğuna inanır. Bu nedenle SEIS; teknik gelişimin yanında liderlik, girişimcilik, iletişim, ekip çalışması ve problem çözme gibi becerilerin de aktif olarak kazanılabileceği bir yapı sunar.",
+                "Topluluğumuzun temel amacı; öğrencileri pasif katılımcılar haline getirmek değil, aktif sorumluluk alan ve üreten bireyler olarak yetişmelerine katkı sağlamaktır. Etkinlikler, projeler, atölyeler ve iş birlikleri aracılığıyla öğrencilerin potansiyellerini keşfetmelerini, kendilerini denemelerini ve gerçek dünyaya hazırlanmasını hedefleriz.",
+                "SEIS, üniversite–sektör–öğrenci üçgeninde köprü olmayı amaçlar. Akademisyenler, sektör temsilcileri ve öğrenci topluluklarıyla kurulan iş birlikleri sayesinde; öğrencilerin hem teknik hem de kariyer anlamında kendilerini geliştirebilecekleri sürdürülebilir bir ortam oluşturur. Bu yaklaşım, SEIS’i yalnızca bir öğrenci topluluğu değil, uzun vadeli bir vizyon hareketi haline getirir.",
+                "Kuruluşundan itibaren şeffaflık, samimiyet ve sürdürülebilirlik ilkeleriyle hareket eden SEIS; üyelerine yalnızca bir topluluğun parçası olma hissi değil, aynı zamanda bir kimlik ve aidiyet sunar. SEIS’li olmak; sorumluluk almak, gelişime açık olmak ve geleceği bugünden inşa etmeye cesaret etmek anlamına gelir.",
+                "SEIS, Sakarya Üniversitesi çatısı altında doğmuş olsa da vizyonunu üniversite sınırlarının ötesine taşımayı hedefler. Kısa vadede üniversite çapında güçlü bir etki alanı oluşturmayı, uzun vadede ise ulusal ve uluslararası düzeyde değer üreten bir öğrenci topluluğu haline gelmeyi amaçlamaktadır.",
+                "Biz SEIS olarak; sadece etkinlik düzenleyen değil, sadece konuşan değil, üreten, geliştiren ve iz bırakan bir topluluk olmayı hedefliyoruz."
+            ],
+            valuesTitle: "Değerlerimiz",
+            valuesIntro: "Sakarya Engineering & Innovation Society (SEIS) olarak, attığımız her adımı belirleyen temel değerlerimiz; sadece bugün yaptıklarımızı değil, gelecekte nasıl bir topluluk olacağımızı da tanımlar.",
+            valuesList: [
+                { title: "Vizyon Sahibi Olmak", desc: "SEIS, günü kurtaran değil; geleceği inşa eden bir anlayışla hareket eder. Kısa vadeli kazanımlar yerine uzun vadeli etkiyi önemser." },
+                { title: "Üretkenlik ve Sorumluluk", desc: "SEIS’te fikir üretmek kadar, o fikrin sorumluluğunu almak da esastır. Üyelerimizin pasif katılımcılar değil; görev alan bireyler olmasını önemseriz." },
+                { title: "Sürekli Gelişim", desc: "Gelişimin bir hedef değil, bir süreç olduğuna inanırız. SEIS; üyelerini öğrenmeye, denemeye, hata yapmaya ve bu hatalardan güçlenerek çıkmaya teşvik eder." },
+                { title: "Samimiyet ve Güven", desc: "SEIS, ilişkilerinde şeffaflık ve samimiyeti esas alır. Güven ortamı oluşturmanın; sürdürülebilir ekipler için vazgeçilmez olduğuna inanırız." },
+                { title: "İş Birliği ve Dayanışma", desc: "Başarının bireysel değil, kolektif olduğuna inanırız. SEIS; ekip çalışmasını ve birlikte üretmeyi teşvik eder." },
+                { title: "Etki Odaklılık", desc: "SEIS için yapılan her çalışmanın bir karşılığı olmalıdır. Nicelikten çok nitelik üretmeyi önemseriz." },
+                { title: "Temiz Niyet ve Etik Duruş", desc: "SEIS; çıkar odaklı değil, değer odaklı bir topluluktur. Başarıyı yalnızca sonuçlarla değil, o sonuca giden yolun doğruluğuyla değerlendiririz." }
+            ]
+        },
+        missionVision: {
+            title: "Misyon & Vizyon",
+            description: "Amacımız ve hedeflediğimiz gelecek.",
+            missionTitle: "Misyonumuz",
+            missionText: "Öğrencilerin teknik bilgi, liderlik, iletişim ve takım çalışması becerilerini geliştirebilecekleri bir ortam yaratmak; mühendislikte yenilikçi ve sürdürülebilir çözümler üretmelerine destek olmak. Küresel ölçekte rekabet edebilecek donanımlı bireyler yetiştirmek için gereken tüm imkanları sağlamak.",
+            visionTitle: "Vizyonumuz",
+            visionText: "Sakarya Üniversitesi’ni ulusal ve uluslararası platformlarda mühendislikte öncü bir marka haline getirmek ve geleceğin lider mühendislerini yetiştirmek. Teknolojiyi sadece tüketen değil, aynı zamanda üreten ve yön veren bir topluluk olmak.",
+            strategicGoalsTitle: "Stratejik Hedeflerimiz",
+            goals: {
+                qualityEducationTitle: "Gerçek Dünya Yetkinlikleri",
+                qualityEducationText: "SEIS olarak hedefimiz; öğrencileri sadece teorik bilgiyle değil, sektörde karşılığı olan becerilerle donatmaktır. Mühendislik, teknoloji ve inovasyon alanlarında; uygulamalı, güncel ve etkisi yüksek eğitimlerle üyelerimizi gerçek dünyaya hazırlarız.",
+                cooperationTitle: "Üretim Odaklı İş Birlikleri",
+                cooperationText: "SEIS, firmalarla yalnızca isim bazlı değil; proje, deneyim ve çıktı odaklı iş birlikleri kurmayı hedefler. Öğrencilerin sektörle erken temas kurabileceği, sorumluluk alabileceği ve değer üretebileceği ortak çalışmalar geliştiririz.",
+                socialResponsibilityTitle: "Etki Yaratan Mühendislik",
+                socialResponsibilityText: "Mühendisliğin yalnızca teknik değil, aynı zamanda toplumsal bir sorumluluk olduğuna inanırız. SEIS olarak bilgi ve teknolojiyi; sosyal fayda üreten, sürdürülebilir ve anlamlı projelere dönüştürmeyi amaçlarız."
+            }
+        },
+        sponsors: {
+            title: "Sponsorlarımız",
+            description: "Bize destek veren ve büyümemize katkı sağlayan değerli iş ortaklarımız.",
+            becomeSponsorTitle: "Sponsor Olmak İster misiniz?",
+            becomeSponsorText: "Geleceğin mühendislerine destek olmak ve markanızı üniversite gençliği ile buluşturmak için bizimle iletişime geçin.",
+            contactBtn: "İletişime Geç"
+        },
+        contact: {
+            title: "İletişim",
+            description: "Bize ulaşın, sorularınızı yanıtlayalım.",
+            emailTitle: "E-posta",
+            emailText: "Genel sorularınız ve işbirlikleri için:",
+            addressTitle: "Adres",
+            addressText1: "Sakarya Üniversitesi, Esentepe Kampüsü",
+            addressText2: "Serdivan / Sakarya",
+            socialMediaTitle: "Sosyal Medya",
+            socialMediaText: "Etkinliklerimizden haberdar olmak için bizi takip edin."
+        },
+        eventsPage: {
+            title: "Etkinlikler",
+            description: "Teknoloji, kariyer ve sosyal alanda düzenlediğimiz etkinlikler.",
+            upcomingTitle: "Gelecek Etkinlikler",
+            pastTitle: "Geçmiş Etkinlikler",
+            noEvents: "Şu an planlanmış yeni bir etkinlik bulunmamaktadır. Takipte kalın!",
+            upcoming: [
+                { title: "Bahar Partisi", desc: "Bahara hoşgeldin diyerek enerjimizi tazelediğimiz eğlenceli bir buluşma." },
+                { title: "Hackathon", desc: "Yenilikçi fikirler üreteceğimiz ve kıyasıya yarışacağımız 48 saatlik maraton." },
+                { title: "Tasarım Workshop", desc: "Tasarımın temellerini öğrenip uygulayabileceğimiz interaktif bir atölye." },
+                { title: "Kadın Girişimciler Zirvesi", desc: "İş dünyasında kadının gücüne ve Kadınlar Günü'ne vurgu yapan ilham verici zirve." },
+                { title: "Film Gecesi", desc: "Yoğun tempoya kısa bir mola verip birlikte film izleyerek soluklandığımız keyifli akşam." },
+                { title: "MUN", desc: "Model United Nations simülasyonu ile diplomasi ve dünya sorunlarını tartışıyoruz." },
+                { title: "Aileler Yarışıyor", desc: "Ekiplerin eğlenceli sorularla kıyasıya mücadele ettiği keyifli yarışma formatı." }
+            ],
+            past: [
+                { title: "Hoşgeldin Partisi", desc: "Yeni döneme ve yeni arkadaşlarımıza merhaba dediğimiz tanışma partisi." },
+                { title: "IT Workshop", desc: "HTML ve CSS temellerini öğrenerek web dünyasına ilk adımı attığımız atölye." },
+                { title: "Quiz Night", desc: "Popüler dizilerden sorularla bilgimizi test ettiğimiz ödüllü ve eğlenceli yarışma." }
+            ]
+        }
+    },
+    en: {
+        nav: {
+            home: "Home",
+            about: "About Us",
+            mission: "Mission & Vision",
+            events: "Events",
+            board: "Board of Directors",
+            team: "Our Team",
+            sponsors: "Our Sponsors",
+            contact: "Contact",
+            apply: "Apply Now"
+        },
+        hero: {
+            title: "Sakarya Engineering Innovation Society",
+            subtitle: "A community of Sakarya University students coming together to open new horizons in technology, innovation, and engineering.",
+            discover: "Discover More"
+        },
+        home: {
+            welcomeTitle: "Welcome",
+            welcomeLead: "The community bringing together the engineers of the future.",
+            cards: {
+                about: {
+                    title: "About Us",
+                    text: "Learn more about SEIS's history and goals.",
+                    btn: "Read More"
+                },
+                events: {
+                    title: "Events",
+                    text: "Check out the events we organize throughout the year.",
+                    btn: "Review"
+                },
+                join: {
+                    title: "Join Our Family",
+                    text: "Would you like to be a part of this dynamic team?",
+                    btn: "Apply Now"
+                }
+            }
+        },
+        board: {
+            title: "Board of Directors",
+            description: "The management team taking strategic decisions for our club.",
+            clickInfo: "Click for Details",
+            roles: {
+                president: "President",
+                vicePresident: "Vice President",
+                hr: "Recruitment & Development Executive",
+                event: "Event Coordinator",
+                fund: "Fundraising Coordinator"
+            }
+        },
+        team: {
+            title: "Our Team",
+            description: "The dynamic team behind innovative projects.",
+            clickInfo: "Click for Details",
+            sectionTitle: "Team Members"
+        },
+        dialog: {
+            email: "Email",
+            department: "Department",
+            about: "About",
+            notSpecified: "Not specified",
+            noInfo: "No information available."
+        },
+        footer: {
+            powered: "Powered by SEIS IT Team"
+        },
+        about: {
+            title: "About Us",
+            description: "Vision, Productivity, and Future",
+            content: [
+                "Sakarya Engineering & Innovation Society (SEIS) is a student community that aims to develop students not only with academic knowledge but also with vision, productivity, and a sense of responsibility. SEIS was established to create a development ecosystem for students who think and produce with a focus on engineering and innovation.",
+                "SEIS advocates that student life is not just about classes and exams. We believe that academic knowledge finds its true value when combined with the right vision, right environment, and right opportunities. Therefore, SEIS offers a structure where skills such as leadership, entrepreneurship, communication, teamwork, and problem-solving can be actively gained alongside technical development.",
+                "The main goal of our community is not to turn students into passive participants, but to contribute to their growth as individuals who take active responsibility and produce. We aim for students to discover their potential, test themselves, and prepare for the real world through events, projects, workshops, and collaborations.",
+                "SEIS aims to be a bridge in the university-industry-student triangle. Through collaborations with academics, industry representatives, and student communities, it creates a sustainable environment where students can develop themselves both technically and professionally.",
+                "Acting with the principles of transparency, sincerity, and sustainability since its foundation, SEIS offers its members not only the feeling of being part of a community but also an identity and a sense of belonging. Being a SEIS member means taking responsibility, being open to development, and daring to build the future from today.",
+                "Although born under the roof of Sakarya University, SEIS aims to carry its vision beyond the university borders. It aims to create a strong sphere of influence university-wide in the short term and to become a student community that produces value at national and international levels in the long term.",
+                "As SEIS; we aim to be a community that not only organizes events, not only talks, but produces, develops, and leaves a mark."
+            ],
+            valuesTitle: "Our Values",
+            valuesIntro: "As Sakarya Engineering & Innovation Society (SEIS), our core values define not only what we do today but also what kind of community we will be in the future.",
+            valuesList: [
+                { title: "Being Visionary", desc: "SEIS acts with an understanding that builds the future, not just saves the day. It cares about long-term impact rather than short-term gains." },
+                { title: "Productivity and Responsibility", desc: "At SEIS, taking responsibility for an idea is as essential as generating it. We care about our members being individuals who take charge, not passive participants." },
+                { title: "Continuous Development", desc: "We believe that development is a process, not a destination. SEIS encourages its members to learn, try, make mistakes, and come out stronger." },
+                { title: "Sincerity and Trust", desc: "SEIS bases its relationships on transparency and sincerity. We believe that creating an environment of trust is indispensable for sustainable teams." },
+                { title: "Cooperation and Solidarity", desc: "We believe that success is collective, not individual. SEIS encourages teamwork and producing together." },
+                { title: "Impact Orientation", desc: "Every work done for SEIS must have a return. We care about producing quality rather than quantity." },
+                { title: "Pure Intention and Ethical Stance", desc: "SEIS is a value-oriented community, not interest-oriented. We evaluate success not only by the results but also by the correctness of the path leading to that result." }
+            ]
+        },
+        missionVision: {
+            title: "Mission & Vision",
+            description: "Our purpose and the future we aim for.",
+            missionTitle: "Our Mission",
+            missionText: "To create an environment where students can develop technical knowledge, leadership, communication, and teamwork skills; to support them in producing innovative and sustainable solutions in engineering. To provide all necessary facilities to raise well-equipped individuals who can compete on a global scale.",
+            visionTitle: "Our Vision",
+            visionText: "To make Sakarya University a leading brand in engineering on national and international platforms and to raise the leading engineers of the future. To be a community that not only consumes technology but also produces and guides it.",
+            strategicGoalsTitle: "Our Strategic Goals",
+            goals: {
+                qualityEducationTitle: "Real World Competencies",
+                qualityEducationText: "Our goal at SEIS is to equip students not only with theoretical knowledge but also with skills relevant to the sector. We prepare our members for the real world with applied, up-to-date, and high-impact training in engineering, technology, and innovation.",
+                cooperationTitle: "Production-Oriented Collaborations",
+                cooperationText: "SEIS aims to establish project, experience, and outcome-oriented collaborations with companies, rather than just nominal ones. We develop joint initiatives where students can engage with the industry early, take responsibility, and create value.",
+                socialResponsibilityTitle: "Impact-Creating Engineering",
+                socialResponsibilityText: "We believe engineering is not just a technical but also a social responsibility. As SEIS, we aim to transform knowledge and technology into sustainable, meaningful projects that generate social benefit."
+            }
+        },
+        sponsors: {
+            title: "Our Sponsors",
+            description: "Our valuable business partners who support us and contribute to our growth.",
+            becomeSponsorTitle: "Would You Like to Become a Sponsor?",
+            becomeSponsorText: "Contact us to support the engineers of the future and bring your brand together with university youth.",
+            contactBtn: "Contact Us"
+        },
+        contact: {
+            title: "Contact",
+            description: "Contact us, let's answer your questions.",
+            emailTitle: "Email",
+            emailText: "For general inquiries and collaborations:",
+            addressTitle: "Address",
+            addressText1: "Sakarya University, Esentepe Campus",
+            addressText2: "Serdivan / Sakarya",
+            socialMediaTitle: "Social Media",
+            socialMediaText: "Follow us to stay updated on our events."
+        },
+        eventsPage: {
+            title: "Events",
+            description: "Events we organize in technology, career, and social fields.",
+            upcomingTitle: "Upcoming Events",
+            pastTitle: "Past Events",
+            noEvents: "There are currently no scheduled events. Stay tuned!",
+            upcoming: [
+                { title: "Spring Party", desc: "A fun gathering where we refresh our energy by welcoming spring." },
+                { title: "Hackathon", desc: "A 48-hour marathon where we generate innovative ideas and compete fiercely." },
+                { title: "Design Workshop", desc: "An interactive workshop where we learn and apply the basics of design." },
+                { title: "Women Entrepreneurs Summit", desc: "An inspiring summit highlighting the power of women in business and Women's Day." },
+                { title: "Movie Night", desc: "A pleasant evening where we take a break from the busy schedule and relax by watching a movie together." },
+                { title: "MUN", desc: "Discussing diplomacy and world issues with a Model United Nations simulation." },
+                { title: "Family Feud", desc: "An enjoyable competition format where teams struggle with fun questions." }
+            ],
+            past: [
+                { title: "Welcome Party", desc: "A meet-and-greet party where we said hello to the new semester and new friends." },
+                { title: "IT Workshop", desc: "A workshop where we took the first step into the web world by learning HTML and CSS basics." },
+                { title: "Quiz Night", desc: "An award-winning and fun competition where we tested our knowledge with questions from popular TV series." }
+            ]
+        }
+    }
+};

@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useLanguage } from "../context/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 import "../styles/seis.css";
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const { t } = useLanguage();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -23,22 +26,28 @@ export default function Header() {
                     SEIS
                 </Link>
 
-                {/* HAMBURGER BUTTON */}
-                <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menu">
-                    {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                </button>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+                    {/* NAVIGASYON */}
+                    <nav className={`site-nav ${isMenuOpen ? "active" : ""}`}>
+                        <Link to="/hakkimizda" onClick={closeMenu}>{t('nav.about')}</Link>
+                        <Link to="/misyon-vizyon" onClick={closeMenu}>{t('nav.mission')}</Link>
+                        <Link to="/etkinlikler" onClick={closeMenu}>{t('nav.events')}</Link>
+                        <Link to="/yonetim-kurulu" onClick={closeMenu}>{t('nav.board')}</Link>
+                        <Link to="/ekibimiz" onClick={closeMenu}>{t('nav.team')}</Link>
+                        <Link to="/sponsorlarimiz" onClick={closeMenu}>{t('nav.sponsors')}</Link>
+                        <Link to="/iletisim" onClick={closeMenu}>{t('nav.contact')}</Link>
+                        <Link to="/basvuru" className="nav-btn" onClick={closeMenu}>{t('nav.apply')}</Link>
+                    </nav>
 
-                {/* NAVIGASYON */}
-                <nav className={`site-nav ${isMenuOpen ? "active" : ""}`}>
-                    <Link to="/hakkimizda" onClick={closeMenu}>Hakkımızda</Link>
-                    <Link to="/misyon-vizyon" onClick={closeMenu}>Misyon & Vizyon</Link>
-                    <Link to="/etkinlikler" onClick={closeMenu}>Etkinlikler</Link>
-                    <Link to="/yonetim-kurulu" onClick={closeMenu}>Yönetim Kurulu</Link>
-                    <Link to="/ekibimiz" onClick={closeMenu}>Ekibimiz</Link>
-                    <Link to="/sponsorlarimiz" onClick={closeMenu}>Sponsorlarımız</Link>
-                    <Link to="/iletisim" onClick={closeMenu}>İletişim</Link>
-                    <Link to="/basvuru" className="nav-btn" onClick={closeMenu}>Başvuru Yap</Link>
-                </nav>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+                        <LanguageSwitcher />
+
+                        {/* HAMBURGER BUTTON */}
+                        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Menu">
+                            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
     );

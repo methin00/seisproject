@@ -5,6 +5,8 @@ body {
     width: 100%;
     position: relative;
     scroll-behavior: smooth;
+    /* Mobilde yatay taşmayı engellemek için */
+    overflow-x: hidden;
 }
 
 :root {
@@ -273,6 +275,10 @@ section:nth-of-type(even) {
     opacity: 0;
     /* Animasyon için JS kontrolünde */
     transform: translateY(20px);
+    /* Uzun metinlerin taşmasını önle */
+    word-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
 }
 
 /* JS ile 'visible' class'ı eklenince */
@@ -475,7 +481,9 @@ section:nth-of-type(even) {
     max-width: 600px;
     position: relative;
     box-shadow: var(--shadow-lg);
-    overflow: hidden;
+    /* overflow: hidden kücük ekranlarda içerik sığmazsa scroll'u engelliyordu, kaldırıldı ve max-height eklendi */
+    max-height: 90vh;
+    overflow-y: auto;
     animation: slideUpModal 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -594,5 +602,74 @@ section:nth-of-type(even) {
 
     .modal-body {
         padding: 32px 24px;
+    }
+}
+
+/* --- Language Switcher --- */
+.language-switcher {
+    cursor: pointer;
+    user-select: none;
+    padding: 2px;
+}
+
+.switcher-track {
+    width: 64px;
+    height: 30px;
+    background: #f1f5f9;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    border: 1px solid #e2e8f0;
+    transition: var(--transition);
+}
+
+.switcher-track:hover {
+    border-color: var(--primary-color);
+    background: #fff;
+}
+
+.switcher-label {
+    font-size: 10px;
+    font-weight: 700;
+    color: #94a3b8;
+    z-index: 1;
+    transition: var(--transition);
+}
+
+.switcher-track.tr .switcher-label.tr,
+.switcher-track.en .switcher-label.en {
+    color: var(--primary-color);
+}
+
+.switcher-thumb {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switcher-track.en .switcher-thumb {
+    transform: translateX(34px);
+}
+
+.switcher-track.tr .switcher-thumb {
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        gap: 10px;
     }
 }

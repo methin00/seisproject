@@ -4,6 +4,7 @@ import Section from "../components/Section";
 import MemberDialog from "../components/MemberDialog";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { useLanguage } from "../context/LanguageContext";
 
 const teamMembers = [
     {
@@ -18,7 +19,7 @@ const teamMembers = [
         role: "IT Coordinator",
         department: "Yazılım Mühendisliği",
         email: "metin-cakmak2005@hotmail.com",
-        about: "İstanbul doğumlu bir yazılım meraklısı olarak, çocukluk merakımı profesyonel bir vizyona dönüştürdüm. Web Geliştirme ve Veri Bilimi disiplinleri arasında köprü kurarken, SEIS IT Takım Lideri rolümle ekibimin teknik gücünü dijital geleceğe yönlendiriyorum. Amacım, teknik becerileri doğru liderlik stratejileriyle birleştirerek fark yaratan dijital deneyimler sunmak."
+        about: "İstanbul doğumlu bir yazılım tutkunu olan Metin Çakmak, çocukluk yıllarından gelen teknoloji merakını zamanla profesyonel bir vizyona dönüştürmüştür. Web Geliştirme ve Veri Bilimi disiplinleri arasında güçlü bir köprü kuran Çakmak, SEIS IT Takım Lideri olarak ekibinin teknik kapasitesini dijital geleceğe yönelik projelerle yönetmektedir. Temel hedefi, teknik yetkinliklerini doğru liderlik stratejileriyle birleştirerek fark yaratan dijital deneyimler sunmaktır."
     },
     {
         name: "Esad Bal",
@@ -82,6 +83,7 @@ export default function Team() {
     useRevealOnScroll();
     useDocumentTitle("Ekibimiz");
     const [selectedMember, setSelectedMember] = useState(null);
+    const { t } = useLanguage();
 
     const openMemberDetails = (member) => {
         setSelectedMember(member);
@@ -94,11 +96,11 @@ export default function Team() {
     return (
         <div>
             <PageHeader
-                title="Ekibimiz"
-                description="Yenilikçi projelerin arkasındaki dinamik kadro."
+                title={t('team.title')}
+                description={t('team.description')}
             />
 
-            <Section id="team-members" title="Ekip Üyeleri">
+            <Section id="team-members" title={t('team.sectionTitle')}>
                 <div className="card-grid" style={{
                     gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
                     gap: '1.5rem'
@@ -135,7 +137,7 @@ export default function Team() {
                             </div>
                             <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem', color: '#334155' }}>{member.name}</h4>
                             <p style={{ fontSize: '0.9rem', color: '#64748b' }}>{member.role}</p>
-                            <p style={{ fontSize: '0.8rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: '400' }}>Detaylı Bilgi İçin Tıkla </p>
+                            <p style={{ fontSize: '0.8rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: '400' }}>{t('team.clickInfo')}</p>
                         </div>
                     ))}
                 </div>

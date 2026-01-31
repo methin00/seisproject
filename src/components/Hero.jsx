@@ -1,18 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Hero() {
+    const { t } = useLanguage();
+
     return (
         <section className="hero">
             <div className="hero-content">
-                <h1>Sakarya Engineering Innovation Society</h1>
+                <h1>{t('hero.title')}</h1>
                 <p>
-                    Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen
-                    Sakarya Üniversitesi öğrencileri topluluğu.
+                    {t('hero.subtitle')}
                 </p>
                 <div className="hero-buttons">
                     <Link to="/hakkimizda" className="btn btn-primary">
-                        Daha Fazla Keşfet
+                        {t('hero.discover')}
                     </Link>
                 </div>
             </div>

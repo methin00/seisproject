@@ -4,29 +4,30 @@ import Section from "../components/Section";
 import MemberDialog from "../components/MemberDialog";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import useDocumentTitle from "../hooks/useDocumentTitle";
+import { useLanguage } from "../context/LanguageContext";
 
 const boardMembers = [
     {
         name: "Ensar Davut",
-        role: "President",
+        role: "president",
         department: "Elektrik Elektronik Mühendisliği",
-        email: "ensar.davut@infoseis.com",
-        about: "Kulübümüzün vizyonunu belirleyen ve stratejik yönetimini üstlenen başkanımız. Teknoloji ve inovasyon odaklı projelerde liderlik yapmaktadır. Ekibimizin koordinasyonunu sağlamakta ve dış ilişkileri yönetmektedir. Sosyal sorumluluk projelerine büyük önem vermektedir. Geleceğin teknolojilerini topluma kazandırmayı hedeflemektedir.",
+        email: "Mailim de ensar.davud@ogr.sakarya.edu.tr",
+        about: "Ensar Davud, Sakarya Üniversitesi Elektrik-Elektronik Mühendisliği öğrencisi ve Sakarya Engineering & Innovation Society (SEIS)’in kurucusu ile 1. dönem başkanıdır. SEIS’i; öğrencilerin yalnızca akademik değil, aynı zamanda vizyon, liderlik ve üretkenlik açısından da gelişebileceği bir yapı oluşturmak amacıyla kurmuştur. Hedefi, öğrencileri potansiyellerini keşfeden, sorumluluk alan ve kariyerlerini bilinçli şekilde inşa eden bireyler haline getirmektir.",
         img: "https://via.placeholder.com/200",
-        bio: "ensar.davut@infoseis.com"
+        bio: "Mailim de ensar.davud@ogr.sakarya.edu.tr"
     },
     {
         name: "Gökhan Batın Uygun",
-        role: "Vice President",
+        role: "vicePresident",
         department: "Elektrik Elektronik Mühendisliği",
-        email: "gokhan.uygun@infoseis.com",
-        about: "Operasyonel süreçlerin yönetiminden sorumlu başkan yardımcımız. Teknik altyapı ve proje geliştirme süreçlerinde aktif rol almaktadır. Ekip içi iletişimi güçlendirmek ve hedeflere ulaşmak için çalışmaktadır. Analitik düşünme yapısıyla karmaşık sorunlara hızlı çözümler üretir. Sürekli gelişim ve öğrenme odaklı bir yaklaşım benimsemektedir.",
+        email: "gokhan.uygun@ogr.sakarya.edu.tr",
+        about: "İstanbul doğumlu, Karadenizli bir EEM öğrencisi ve SEIS Başkan Yardımcısı. Mühendislik eğitimini futbol ve fitness ile kazandığı disiplinle destekleyen; enerjisini ve teknik vizyonunu kulübünün geleceği için kullanan bir teknoloji tutkunu.",
         img: "https://via.placeholder.com/200",
-        bio: "gokhan.uygun@infoseis.com"
+        bio: "gokhan.uygun@ogr.sakarya.edu.tr"
     },
     {
         name: "Gürsel Gecir",
-        role: "Recruitment & Development Executive",
+        role: "hr",
         department: "Elektrik Elektronik Mühendisliği",
         email: "gursel.gecir@infoseis.com",
         about: "İnsan kaynakları ve yetenek yönetimi süreçlerini yönetmektedir. Yeni üyelerin adaptasyonu ve kişisel gelişimleri için eğitimler düzenler. Ekip dinamiklerini analiz ederek verimliliği artırmayı hedefler. Kariyer planlaması ve mentorluk konularında deneyimlidir. Pozitif bir çalışma ortamı oluşturmak için çaba sarf etmektedir.",
@@ -35,7 +36,7 @@ const boardMembers = [
     },
     {
         name: "Enes Ataman",
-        role: "Event Coordinator",
+        role: "event",
         department: "Elektrik Elektronik Mühendisliği",
         email: "enes.ataman@infoseis.com",
         about: "Etkinlik planlama ve uygulama süreçlerinin lideridir. Sosyal ve teknik etkinliklerin baştan sona koordinasyonunu sağlar. Sponsorluk ve lojistik süreçlerini titizlikle yönetir. Yaratıcı konseptler geliştirerek unutulmaz deneyimler yaratmayı hedefler. Kriz yönetimi ve bütçe planlaması konularında uzmandır.",
@@ -44,7 +45,7 @@ const boardMembers = [
     },
     {
         name: "Halil Bodur",
-        role: "Fundraising Coordinator",
+        role: "fund",
         department: "Makine Mühendisliği",
         email: "halil.bodur@infoseis.com",
         about: "Kulübün finansal sürdürülebilirliğini sağlamak için kaynak geliştirir. Sponsorluk ilişkilerini yönetir ve yeni ortaklıklar kurar. Bütçe yönetimi ve finansal raporlama konularında sorumluluk alır. Stratejik ortaklıklar aracılığıyla projelerimize değer katar. Girişimci ruhuyla yeni fon kaynakları yaratma konusunda başarılıdır.",
@@ -57,6 +58,7 @@ export default function Board() {
     useRevealOnScroll();
     useDocumentTitle("Yönetim Kurulu");
     const [selectedMember, setSelectedMember] = useState(null);
+    const { t } = useLanguage();
 
     const openMemberDetails = (member) => {
         setSelectedMember(member);
@@ -69,11 +71,11 @@ export default function Board() {
     return (
         <div>
             <PageHeader
-                title="Yönetim Kurulu"
-                description="Kulübümüzün stratejik kararlarını alan yönetim kadrosu."
+                title={t('board.title')}
+                description={t('board.description')}
             />
 
-            <Section id="board" title="Yönetim Kurulu">
+            <Section id="board" title={t('board.title')}>
                 <div className="card-grid" style={{
                     gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
                     gap: '2.5rem'
@@ -106,8 +108,8 @@ export default function Board() {
                                 </div>
                             </div>
                             <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#1e40af' }}>{member.name}</h3>
-                            <p style={{ fontWeight: 'bold', color: '#0056b3', marginBottom: '0.5rem', fontSize: '1.1rem' }}>{member.role}</p>
-                            <p style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: '400' }}>Detaylı Bilgi İçin Tıkla </p>
+                            <p style={{ fontWeight: 'bold', color: '#0056b3', marginBottom: '0.5rem', fontSize: '1.1rem' }}>{t(`board.roles.${member.role}`)}</p>
+                            <p style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: '400' }}>{t('board.clickInfo')}</p>
                         </div>
                     ))}
                 </div>
