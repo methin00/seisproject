@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="site-footer">
             <p>© 2026 SEIS. Tüm hakları saklıdır.</p>
-            <p>Powered by SEIS</p>
+            <p>Powered by SEIS IT Team</p>
         </footer>
     );
 }
