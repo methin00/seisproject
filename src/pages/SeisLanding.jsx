@@ -10,11 +10,9 @@ import "../styles/seis.css";
 
 export default function SeisLanding() {
     useRevealOnScroll();
-
     const handleApplyClick = () => {
-        alert("Üyelik formu yakında aktif olacak!");
+        window.location.href = "https://kulup.infoseis.com/register";
     };
-
     return (
         <div>
             <Header />
