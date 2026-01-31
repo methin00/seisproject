@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://seis.sakarya.edu.tr/sitemap.xml
+Sitemap: https://infoseis.com/sitemap.xml
