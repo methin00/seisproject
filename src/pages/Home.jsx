@@ -19,7 +19,7 @@ export default function Home() {
                 <CardGrid>
                     <div className="card" data-reveal>
                         <h3>Hakkımızda</h3>
-                        <p>SEIS'in köklü geçmişi ve amacı hakkında daha fazla bilgi edinin.</p>
+                        <p>SEIS'in geçmişi ve amacı hakkında daha fazla bilgi edinin.</p>
                         <Link to="/hakkimizda" className="btn btn-secondary" style={{ marginTop: '1rem', display: 'inline-block' }}>Devamını Oku</Link>
                     </div>
                     <div className="card" data-reveal>

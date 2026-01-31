@@ -33,6 +33,7 @@ export default function Header() {
                     <Link to="/hakkimizda" onClick={closeMenu}>Hakkımızda</Link>
                     <Link to="/misyon-vizyon" onClick={closeMenu}>Misyon & Vizyon</Link>
                     <Link to="/etkinlikler" onClick={closeMenu}>Etkinlikler</Link>
+                    <Link to="/yonetim-kurulu" onClick={closeMenu}>Yönetim Kurulu</Link>
                     <Link to="/ekibimiz" onClick={closeMenu}>Ekibimiz</Link>
                     <Link to="/sponsorlarimiz" onClick={closeMenu}>Sponsorlarımız</Link>
                     <Link to="/iletisim" onClick={closeMenu}>İletişim</Link>
