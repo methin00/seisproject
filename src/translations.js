@@ -143,6 +143,43 @@ export const translations = {
             socialMediaTitle: "Sosyal Medya",
             socialMediaText: "Etkinliklerimizden haberdar olmak için bizi takip edin."
         },
+        seo: {
+            home: {
+                title: "Ana Sayfa",
+                description: "Sakarya Üniversitesi SEIS (Sakarya Engineering Innovation Society) resmi web sitesi. Teknoloji, mühendislik, inovasyon ve kariyer odaklı öğrenci topluluğu.",
+                keywords: "SEIS, Sakarya Üniversitesi, Ana Sayfa, Öğrenci Topluluğu"
+            },
+            about: {
+                title: "Hakkımızda",
+                description: "SEIS kimdir? Vizyonumuz, misyonumuz ve Sakarya Üniversitesi'ndeki öğrenci kulübü faaliyetlerimiz hakkında bilgi.",
+                keywords: "Hakkımızda, Vizyon, Misyon, SEIS Tarihçe"
+            },
+            board: {
+                title: "Yönetim Kurulu",
+                description: "SEIS Yönetim Kurulu üyeleri. Kulübümüzün stratejik kararlarını alan lider kadroyu tanıyın.",
+                keywords: "Yönetim Kurulu, SEIS Liderleri, Kulüp Başkanı"
+            },
+            team: {
+                title: "Ekibimiz",
+                description: "SEIS'in dinamik ekibiyle tanışın. Projelerimizin arkasındaki çalışkan öğrenciler.",
+                keywords: "SEIS Ekibi, Üyeler, Organizasyon Şeması"
+            },
+            events: {
+                title: "Etkinlikler",
+                description: "Sakarya Üniversitesi SEIS etkinlikleri. Hackathonlar, seminerler, atölyeler ve sosyal etkinlikler.",
+                keywords: "Etkinlikler, Takvim, Hackathon, Workshop"
+            },
+            sponsors: {
+                title: "Sponsorlarımız",
+                description: "SEIS'e destek veren değerli sponsorlarımız ve iş ortaklarımız.",
+                keywords: "Sponsorlar, İş Ortakları, Destekçiler"
+            },
+            contact: {
+                title: "İletişim",
+                description: "SEIS ile iletişime geçin. Adres, e-posta ve sosyal medya hesaplarımız.",
+                keywords: "İletişim, Adres, Ulaşım"
+            }
+        },
         eventsPage: {
             title: "Etkinlikler",
             description: "Teknoloji, kariyer ve sosyal alanda düzenlediğimiz etkinlikler.",
@@ -308,6 +345,43 @@ export const translations = {
             addressText2: "Serdivan / Sakarya",
             socialMediaTitle: "Social Media",
             socialMediaText: "Follow us to stay updated on our events."
+        },
+        seo: {
+            home: {
+                title: "Home",
+                description: "Official website of Sakarya University SEIS (Sakarya Engineering Innovation Society). Technology, engineering, innovation and career focused student community.",
+                keywords: "SEIS, Sakarya University, Home, Student Community"
+            },
+            about: {
+                title: "About Us",
+                description: "Who is SEIS? Information about our vision, mission and student club activities at Sakarya University.",
+                keywords: "About Us, Vision, Mission, SEIS History"
+            },
+            board: {
+                title: "Board",
+                description: "SEIS Board of Directors. Meet the leadership team making strategic decisions for our club.",
+                keywords: "Board, SEIS Leaders, Club President"
+            },
+            team: {
+                title: "Our Team",
+                description: "Meet the dynamic team of SEIS. The hardworking students behind our projects.",
+                keywords: "SEIS Team, Members, Organization Chart"
+            },
+            events: {
+                title: "Events",
+                description: "Sakarya University SEIS events. Hackathons, seminars, workshops and social events.",
+                keywords: "Events, Calendar, Hackathon, Workshop"
+            },
+            sponsors: {
+                title: "Sponsors",
+                description: "Our valuable sponsors and partners supporting SEIS.",
+                keywords: "Sponsors, Partners, Supporters"
+            },
+            contact: {
+                title: "Contact",
+                description: "Contact SEIS. Our address, email and social media accounts.",
+                keywords: "Contact, Address, Location"
+            }
         },
         eventsPage: {
             title: "Events",

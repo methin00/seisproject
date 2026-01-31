@@ -4,16 +4,20 @@ import Hero from "../components/Hero";
 import Section from "../components/Section";
 import CardGrid from "../components/CardGrid";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Home() {
     useRevealOnScroll();
-    useDocumentTitle("Ana Sayfa");
     const { t } = useLanguage();
 
     return (
         <div>
+            <SEO
+                title={t('seo.home.title')}
+                description={t('seo.home.description')}
+                keywords={t('seo.home.keywords')}
+            />
             <Hero />
 
             <Section id="welcome" title={t('home.welcomeTitle')} lead={t('home.welcomeLead')}>

@@ -3,6 +3,7 @@ import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import { useLanguage } from "../context/LanguageContext";
+import SEO from "../components/SEO";
 
 const sponsors = [
     "Sponsor 1", "Sponsor 2", "Sponsor 3", "Sponsor 4",
@@ -15,6 +16,11 @@ export default function Sponsors() {
 
     return (
         <div>
+            <SEO
+                title={t('seo.sponsors.title')}
+                description={t('seo.sponsors.description')}
+                keywords={t('seo.sponsors.keywords')}
+            />
             <PageHeader
                 title={t('sponsors.title')}
                 description={t('sponsors.description')}

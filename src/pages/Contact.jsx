@@ -2,17 +2,21 @@ import React from "react";
 import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 import { FaInstagram, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
 
 export default function Contact() {
     useRevealOnScroll();
-    useDocumentTitle("İletişim");
     const { t } = useLanguage();
 
     return (
         <div>
+            <SEO
+                title={t('seo.contact.title')}
+                description={t('seo.contact.description')}
+                keywords={t('seo.contact.keywords')}
+            />
             <PageHeader
                 title={t('contact.title')}
                 description={t('contact.description')}

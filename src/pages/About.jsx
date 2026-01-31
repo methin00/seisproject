@@ -5,6 +5,7 @@ import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import { useLanguage } from "../context/LanguageContext";
 import Card from "../components/Card";
 import CardGrid from "../components/CardGrid";
+import SEO from "../components/SEO";
 
 export default function About() {
     useRevealOnScroll();
@@ -15,6 +16,11 @@ export default function About() {
 
     return (
         <div>
+            <SEO
+                title={t('seo.about.title')}
+                description={t('seo.about.description')}
+                keywords={t('seo.about.keywords')}
+            />
             <PageHeader
                 title={t('about.title')}
                 description={t('about.description')}

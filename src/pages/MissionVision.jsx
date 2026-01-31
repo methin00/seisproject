@@ -5,6 +5,7 @@ import Card from "../components/Card";
 import CardGrid from "../components/CardGrid";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
 import { useLanguage } from "../context/LanguageContext";
+import SEO from "../components/SEO";
 
 export default function MissionVision() {
     useRevealOnScroll();
@@ -12,6 +13,11 @@ export default function MissionVision() {
 
     return (
         <div>
+            <SEO
+                title={t('seo.about.title') + " - Misyon & Vizyon"} // Fallback or reusing about SEO, or hardcoding better title
+                description={t('seo.about.description')} // reusing about description for now as it's similar
+                titleTemplate="%s"
+            />
             <PageHeader
                 title={t('missionVision.title')}
                 description={t('missionVision.description')}

@@ -2,9 +2,12 @@ import React from "react";
 import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
+import SEO from "../components/SEO";
+import { useLanguage } from "../context/LanguageContext";
 
 export default function Apply() {
     useRevealOnScroll();
+    const { t } = useLanguage();
 
     const handleApplyClick = () => {
         window.location.href = "https://kulup.infoseis.com/register";
@@ -12,6 +15,11 @@ export default function Apply() {
 
     return (
         <div>
+            <SEO
+                title={t('seo.contact.title') + " - Başvuru"}
+                description="SEIS ailesine katılmak için başvuru yapın. Geleceğin mühendisleri arasına katılın."
+                keywords="Başvuru, Üye Ol, Kayıt Formu"
+            />
             <PageHeader
                 title="Başvuru Yap"
                 description="SEIS ailesinin bir parçası olmak için ilk adımı atın."

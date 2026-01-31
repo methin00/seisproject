@@ -3,7 +3,7 @@ import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import MemberDialog from "../components/MemberDialog";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 import { useLanguage } from "../context/LanguageContext";
 
 const boardMembers = [
@@ -56,7 +56,6 @@ const boardMembers = [
 
 export default function Board() {
     useRevealOnScroll();
-    useDocumentTitle("Yönetim Kurulu");
     const [selectedMember, setSelectedMember] = useState(null);
     const { t } = useLanguage();
 
@@ -73,6 +72,11 @@ export default function Board() {
 
     return (
         <div>
+            <SEO
+                title={t('seo.board.title')}
+                description={t('seo.board.description')}
+                keywords={t('seo.board.keywords')}
+            />
             <PageHeader
                 title={t('board.title')}
                 description={t('board.description')}

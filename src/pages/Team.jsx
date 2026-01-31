@@ -3,7 +3,7 @@ import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import MemberDialog from "../components/MemberDialog";
 import useRevealOnScroll from "../hooks/useRevealOnScroll";
-import useDocumentTitle from "../hooks/useDocumentTitle";
+import SEO from "../components/SEO";
 import { useLanguage } from "../context/LanguageContext";
 
 const teamMembers = [
@@ -81,7 +81,6 @@ const teamMembers = [
 
 export default function Team() {
     useRevealOnScroll();
-    useDocumentTitle("Ekibimiz");
     const [selectedMember, setSelectedMember] = useState(null);
     const { t } = useLanguage();
 
@@ -98,6 +97,11 @@ export default function Team() {
 
     return (
         <div>
+            <SEO
+                title={t('seo.team.title')}
+                description={t('seo.team.description')}
+                keywords={t('seo.team.keywords')}
+            />
             <PageHeader
                 title={t('team.title')}
                 description={t('team.description')}
