@@ -1,4 +1,12 @@
 /* --- Reset & Base --- */
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
 :root {
     /* Color Palette */
     --primary-color: #2563EB;
@@ -190,7 +198,7 @@ header.site-header {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 8vw, 4rem);
     font-weight: 800;
     margin-bottom: 24px;
     letter-spacing: -0.03em;
@@ -199,6 +207,7 @@ header.site-header {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: fadeUp 0.8s ease-out forwards;
+    word-break: break-word;
 }
 
 .hero p {
@@ -213,9 +222,11 @@ header.site-header {
 
 /* --- Sections --- */
 section.section {
-    padding: 100px 24px;
+    padding: 80px 20px;
     max-width: 1280px;
     margin: auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* Alternate Background for sections */
@@ -248,7 +259,7 @@ section:nth-of-type(even) {
 /* --- Cards --- */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
 }
 
