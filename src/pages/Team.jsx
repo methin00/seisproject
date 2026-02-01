@@ -47,7 +47,7 @@ const teamMembers = [
         name: "Mehmet Zahid Görgeç",
         role: "UI/UX & Digital Experience Specialist",
         department: "computerEng",
-        email: "mehmet.gorgec@infoseis.com",
+        email: "mehmetzahidgorgec@gmail.com",
     },
     {
         id: "yagmurKarakaya",
