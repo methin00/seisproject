@@ -20,9 +20,11 @@ export const translations = {
             translation: "İngilizce Mütercim ve Tercümanlık",
             newMedia: "Yeni Medya ve İletişim"
         },
-        title: "Sakarya Engineering Innovation Society",
-        subtitle: "Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen Sakarya Üniversitesi öğrencileri topluluğu.",
-        discover: "Daha Fazla Keşfet",
+        hero: {
+            title: "Sakarya Engineering Innovation Society",
+            subtitle: "Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen Sakarya Üniversitesi öğrencileri topluluğu.",
+            discover: "Daha Fazla Keşfet",
+        },
         home: {
             welcomeTitle: "Hoşgeldiniz",
             welcomeLead: "Geleceğin mühendislerini bir araya getiren topluluk.",
@@ -250,9 +252,11 @@ export const translations = {
             translation: "English Translation and Interpreting",
             newMedia: "New Media and Communication"
         },
-        title: "Sakarya Engineering Innovation Society",
-        subtitle: "A community of Sakarya University students coming together to open new horizons in technology, innovation, and engineering.",
-        discover: "Discover More",
+        hero: {
+            title: "Sakarya Engineering Innovation Society",
+            subtitle: "A community of Sakarya University students coming together to open new horizons in technology, innovation, and engineering.",
+            discover: "Discover More",
+        },
         home: {
             welcomeTitle: "Welcome",
             welcomeLead: "The community bringing together the engineers of the future.",

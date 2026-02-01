@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useLanguage } from "../context/LanguageContext";
@@ -8,6 +8,20 @@ import "../styles/seis.css";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const { t } = useLanguage();
+
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden";
+            document.documentElement.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+            document.documentElement.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+            document.documentElement.style.overflow = "";
+        };
+    }, [isMenuOpen]);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -27,6 +41,12 @@ export default function Header() {
                 </Link>
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '2rem' }}>
+                    {/* MOBILE MENU OVERLAY */}
+                    <div
+                        className={`mobile-menu-overlay ${isMenuOpen ? "active" : ""}`}
+                        onClick={closeMenu}
+                    />
+
                     {/* NAVIGASYON */}
                     <nav className={`site-nav ${isMenuOpen ? "active" : ""}`}>
                         <Link to="/hakkimizda" onClick={closeMenu}>{t('nav.about')}</Link>
