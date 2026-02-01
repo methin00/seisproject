@@ -54,7 +54,7 @@ const teamMembers = [
         name: "Yağmur Karakaya",
         role: "Social Media Executive",
         department: "chemistry",
-        email: "yagmur.karakaya@infoseis.com",
+        email: "yagmurkarakaya773@gmail.com",
     },
     {
         id: "aleynaKaya",
