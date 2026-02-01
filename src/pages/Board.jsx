@@ -11,7 +11,7 @@ const boardMembers = [
         id: "ensarDavut",
         name: "Ensar Davud",
         role: "president",
-        department: "Elektrik Elektronik Mühendisliği",
+        department: "electricalElectronicsEng",
         email: "ensar.davud@ogr.sakarya.edu.tr",
         img: true,
         bio: "ensar.davud@ogr.sakarya.edu.tr"
@@ -20,7 +20,7 @@ const boardMembers = [
         id: "gokhanBatinUygun",
         name: "Gökhan Batın Uygun",
         role: "vicePresident",
-        department: "Elektrik Elektronik Mühendisliği",
+        department: "electricalElectronicsEng",
         email: "gokhan.uygun@ogr.sakarya.edu.tr",
         img: true,
         bio: "gokhan.uygun@ogr.sakarya.edu.tr"
@@ -29,7 +29,7 @@ const boardMembers = [
         id: "gurselGecir",
         name: "Gürsel Gecir",
         role: "hr",
-        department: "Elektrik Elektronik Mühendisliği",
+        department: "electricalElectronicsEng",
         email: "gursel.gecir@ogr.sakarya.edu.tr",
         img: true,
         bio: "gursel.gecir@ogr.sakarya.edu.tr"
@@ -38,7 +38,7 @@ const boardMembers = [
         id: "enesAtaman",
         name: "Enes Ataman",
         role: "event",
-        department: "Elektrik Elektronik Mühendisliği",
+        department: "electricalElectronicsEng",
         email: "enes.ataman@infoseis.com",
         img: true,
         bio: "enes.ataman@infoseis.com"
@@ -47,7 +47,7 @@ const boardMembers = [
         id: "halilBodur",
         name: "Halil Bodur",
         role: "fund",
-        department: "Makine Mühendisliği",
+        department: "mechanicalEng",
         email: "halil.bodur@infoseis.com",
         img: true,
         bio: "halil.bodur@infoseis.com"
@@ -62,7 +62,8 @@ export default function Board() {
     const openMemberDetails = (member) => {
         setSelectedMember({
             ...member,
-            about: t(`board.members.${member.id}.about`)
+            about: t(`board.members.${member.id}.about`),
+            department: t(`departments.${member.department}`)
         });
     };
 

@@ -11,11 +11,18 @@ export const translations = {
             contact: "İletişim",
             apply: "Başvuru Yap"
         },
-        hero: {
-            title: "Sakarya Engineering Innovation Society",
-            subtitle: "Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen Sakarya Üniversitesi öğrencileri topluluğu.",
-            discover: "Daha Fazla Keşfet"
+        departments: {
+            electricalElectronicsEng: "Elektrik Elektronik Mühendisliği",
+            softwareEng: "Yazılım Mühendisliği",
+            computerEng: "Bilgisayar Mühendisliği",
+            mechanicalEng: "Makine Mühendisliği",
+            chemistry: "Kimya",
+            translation: "İngilizce Mütercim ve Tercümanlık",
+            newMedia: "Yeni Medya ve İletişim"
         },
+        title: "Sakarya Engineering Innovation Society",
+        subtitle: "Teknoloji, inovasyon ve mühendislikte yeni ufuklar açmak için bir araya gelen Sakarya Üniversitesi öğrencileri topluluğu.",
+        discover: "Daha Fazla Keşfet",
         home: {
             welcomeTitle: "Hoşgeldiniz",
             welcomeLead: "Geleceğin mühendislerini bir araya getiren topluluk.",
@@ -68,7 +75,7 @@ export const translations = {
                 mehmetZahidGorgec: { about: "Kullanıcı deneyimi ve arayüz tasarımı konusundaki estetik vizyonuyla projelerimize değer katar. Kullanıcı dostu ve modern tasarımlar geliştirerek dijital etkileşimlerimizi güçlendirir. Marka kimliğimizin görsel dilini oluşturur. Piksellerin ötesinde, kullanıcıyı merkezine alan tasarım süreçlerini yönetir." },
                 zeynepCenik: { about: "Sakarya Üniversitesi Kimya Bölümü öğrencisi olan Zeynep, SEIS bünyesinde PR & Marketing Coordinator olarak görev yapmaktadır. İletişimi yalnızca bir duyuru aracı değil, insanları ortak bir amaç etrafında birleştiren bir güç olarak gören Zeynep; dijital içerik üretimi, sosyal medya yönetimi ve etkinlik tanıtımı süreçlerini yönetmektedir. Temel hedefi, SEIS’in görünürlüğünü artırmak ve topluluk için samimi, sürdürülebilir ve güçlü bir iletişim ağı inşa etmektir." },
                 yagmurKarakaya: { about: "Sosyal medya platformlarımızdaki varlığımızı dinamik tutan yöneticimiz. İçerik ve etkileşim stratejileri geliştirerek topluluğumuzla sürekli bağ kurar. Güncel trendleri takip ederek yaratıcı paylaşımlar hazırlar. Analiz ve raporlama yaparak sosyal medya performansımızı optimize eder. Görsel ve metinsel uyumu yakalayarak marka algımızı güçlendirir." },
-                aleynaKaya: { about: "Kelimelerin gücünü görsel tasarımla birleştiren yöneticimiz. İçerik üretimi ve metin yazarlığı süreçlerini yöneterek mesajımızı etkili kılar. Görsel tasarım ekibiyle koordineli çalışarak bütünsel bir iletişim dili oluşturur. Hikaye anlatıcılığı teknikleriyle markamıza ruh katar. Dilin estetiğini tasarımlarımıza yansıtır." },
+                aleynaKaya: { about: "Kelimelerin gücüne inanan ve anlatırken hissettirmeyi ilke edinen Aleyna, SEIS bünyesinde Design & Copywriting Executive olarak görev yapmaktadır. Metin yazarlığını görsel tasarımla buluşturarak markaların ve projelerin kendilerini daha net, gerçek ve etkileyici bir şekilde ifade etmesine yardımcı olmaktadır. İçerik üretim süreçlerinde hikâye anlatıcılığını merkeze alan Aleyna, PR ekibiyle koordineli çalışarak metnin estetiğini tasarımla tamamlamakta ve akılda kalıcı bir iletişim dili oluşturmaktadır." },
                 emreTurk: { about: "Saha operasyonları ve lojistik koordinasyonunun kilit ismidir. Etkinliklerin operasyonel planlamasını yaparak kusursuz işleyişi sağlar. Kaynakların verimli kullanılması için planlamalar yapar. Kriz durumlarında hızlı aksiyon alma yeteneğiyle operasyonel riskleri minimize eder. Süreç yönetiminde titiz bir çalışma sergiler." },
                 senanurBektas: { about: "Kurumsal kapasite ve dış ilişkiler koordinasyonunu yürütmektedir. İş birliği ağlarımızı genişleterek ortak projeler geliştirilmesi için çalışır. Stratejik ortaklıkların sürdürülebilirliğini sağlar. Kulübümüzün ekosistemdeki konumunu güçlendirecek adımlar atar. Profesyonel ağ yönetimi konusunda deneyimlidir." },
                 yagmurAktas: { about: "Sakarya Üniversitesi Mütercim ve Tercümanlık öğrencisi olan Yağmur, dil edinimi odaklı kariyer yolculuğunu müzik ve kodlama gibi farklı disiplinlerle zenginleştirmektedir. SEIS bünyesinde Event Documentation görevini üstlenen Yağmur, kulübün vizyonu doğrultusunda projeler geliştirerek hem bireysel yetkinliklerini hem de topluluğun standartlarını uluslararası düzeye taşımayı hedeflemektedir." }
@@ -234,11 +241,18 @@ export const translations = {
             contact: "Contact",
             apply: "Apply Now"
         },
-        hero: {
-            title: "Sakarya Engineering Innovation Society",
-            subtitle: "A community of Sakarya University students coming together to open new horizons in technology, innovation, and engineering.",
-            discover: "Discover More"
+        departments: {
+            electricalElectronicsEng: "Electrical and Electronics Engineering",
+            softwareEng: "Software Engineering",
+            computerEng: "Computer Engineering",
+            mechanicalEng: "Mechanical Engineering",
+            chemistry: "Chemistry",
+            translation: "English Translation and Interpreting",
+            newMedia: "New Media and Communication"
         },
+        title: "Sakarya Engineering Innovation Society",
+        subtitle: "A community of Sakarya University students coming together to open new horizons in technology, innovation, and engineering.",
+        discover: "Discover More",
         home: {
             welcomeTitle: "Welcome",
             welcomeLead: "The community bringing together the engineers of the future.",
@@ -291,7 +305,7 @@ export const translations = {
                 mehmetZahidGorgec: { about: "Adds value to our projects with his aesthetic vision in user experience and interface design. Strengthens our digital interactions by developing user-friendly and modern designs. Creates the visual language of our brand identity. Manages design processes centered on the user, beyond pixels." },
                 zeynepCenik: { about: "Zeynep, a Chemistry student at Sakarya University, serves as the PR & Marketing Coordinator at SEIS. Viewing communication not just as a means of announcement but as a power uniting people around a common goal, Zeynep manages digital content production, social media management, and event promotion processes. Her main goal is to increase SEIS's visibility and build a sincere, sustainable, and strong communication network for the community." },
                 yagmurKarakaya: { about: "Our executive who keeps our presence on social media platforms dynamic. Constantly connects with our community by developing content and interaction strategies. Prepares creative posts by following current trends. Optimizes our social media performance by analyzing and reporting. Strengthens our brand perception by capturing visual and textual harmony." },
-                aleynaKaya: { about: "Our executive who combines the power of words with visual design. Makes our message effective by managing content production and copywriting processes. Creates a holistic communication language by working in coordination with the visual design team. Adds soul to our brand with storytelling techniques. Reflects the aesthetics of language in our designs." },
+                aleynaKaya: { about: "Believing in the power of words and adopting the principle of making people feel while explaining, Aleyna serves as the Design & Copywriting Executive at SEIS. By combining copywriting with visual design, she helps brands and projects express themselves more clearly, realistically and impressively. Aleyna, who centers storytelling in content production processes, works in coordination with the PR team to complete the aesthetics of the text with design and creates a memorable communication language." },
                 emreTurk: { about: "Key figure in field operations and logistics coordination. Ensures flawless operation by making operational planning of events. Plans for the efficient use of resources. Minimizes operational risks with the ability to take quick action in crisis situations. Displays meticulous work in process management." },
                 senanurBektas: { about: "Conducts corporate capacity and external relations coordination. Works to develop joint projects by expanding our cooperation networks. Ensures the sustainability of strategic partnerships. Takes steps to strengthen our club's position in the ecosystem. Experienced in professional network management." },
                 yagmurAktas: { about: "Yağmur, a student of Translation and Interpreting at Sakarya University, enriches her career journey focused on language acquisition with different disciplines such as music and coding. Undertaking the Event Documentation role within SEIS, Yağmur aims to carry both her individual competencies and the community's standards to an international level by developing projects in line with the club's vision." }

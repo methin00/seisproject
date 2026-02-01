@@ -11,70 +11,70 @@ const teamMembers = [
         id: "metinCakmak",
         name: "Metin Çakmak",
         role: "IT Coordinator",
-        department: "Yazılım Mühendisliği",
+        department: "softwareEng",
         email: "metin-cakmak2005@hotmail.com",
     },
     {
         id: "zeynepCenik",
         name: "Zeynep Cenik",
         role: "PR Coordinator",
-        department: "Kimya",
+        department: "chemistry",
         email: "zeynepcenik06@gmail.com",
     },
     {
         id: "senanurBektas",
         name: "Senanur Bektaş",
         role: "External Relations & Corporate Communications Coordinator",
-        department: "İngilizce Mütercim ve Tercümanlık",
+        department: "translation",
         email: "senanur.bektas@infoseis.com",
     },
     {
         id: "beratKaanAydin",
         name: "Berat Kaan Aydın",
         role: "Discipline & Internal Relations Executive",
-        department: "Elektrik Elektronik Mühendisliği",
+        department: "electricalElectronicsEng",
         email: "berat.aydin@infoseis.com",
     },
     {
         id: "esadBal",
         name: "Esad Bal",
         role: "Innovation & Project Development Specialist",
-        department: "Elektrik Elektronik Mühendisliği",
+        department: "electricalElectronicsEng",
         email: "esad.bal@ogr.sakarya.edu.tr",
     },
     {
         id: "mehmetZahidGorgec",
         name: "Mehmet Zahid Görgeç",
         role: "UI/UX & Digital Experience Specialist",
-        department: "Bilgisayar Mühendisliği",
+        department: "computerEng",
         email: "mehmet.gorgec@infoseis.com",
     },
     {
         id: "yagmurKarakaya",
         name: "Yağmur Karakaya",
         role: "Social Media Executive",
-        department: "Kimya",
+        department: "chemistry",
         email: "yagmur.karakaya@infoseis.com",
     },
     {
         id: "aleynaKaya",
         name: "Aleyna Kaya",
         role: "Design & Copywriting Executive",
-        department: "Yeni Medya ve İletişim",
-        email: "aleyna.kaya@infoseis.com",
+        department: "newMedia",
+        email: "aleeyna.ky@gmail.com",
     },
     {
         id: "emreTurk",
         name: "Emre Türk",
         role: "Operations & Coordination Executive",
-        department: "Bilgisayar Mühendisliği",
+        department: "computerEng",
         email: "emre.turk@infoseis.com",
     },
     {
         id: "yagmurAktas",
         name: "Yağmur Aktaş",
         role: "Event Documentation & Coordination",
-        department: "İngilizce Mütercim ve Tercümanlık",
+        department: "translation",
         email: "suncalypse@gmail.com",
     },
 ];
@@ -87,7 +87,8 @@ export default function Team() {
     const openMemberDetails = (member) => {
         setSelectedMember({
             ...member,
-            about: t(`team.members.${member.id}.about`)
+            about: t(`team.members.${member.id}.about`),
+            department: t(`departments.${member.department}`)
         });
     };
 
