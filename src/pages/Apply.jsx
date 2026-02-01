@@ -13,16 +13,18 @@ export default function Apply() {
         window.location.href = "https://kulup.infoseis.com/register";
     };
 
+    const whyList = t('applyPage.whyList');
+
     return (
         <div>
             <SEO
-                title={t('seo.contact.title') + " - Başvuru"}
-                description="SEIS ailesine katılmak için başvuru yapın. Geleceğin mühendisleri arasına katılın."
-                keywords="Başvuru, Üye Ol, Kayıt Formu"
+                title={t('applyPage.seo.title')}
+                description={t('applyPage.seo.description')}
+                keywords={t('applyPage.seo.keywords')}
             />
             <PageHeader
-                title="Başvuru Yap"
-                description="SEIS ailesinin bir parçası olmak için ilk adımı atın."
+                title={t('applyPage.title')}
+                description={t('applyPage.description')}
             />
 
             <Section id="apply">
@@ -35,25 +37,23 @@ export default function Apply() {
                     boxShadow: '0 4px 20px rgba(0,0,0,0.1)',
                     textAlign: 'center'
                 }} data-reveal>
-                    <h2 style={{ color: '#0056b3', marginBottom: '1.5rem' }}>Neden SEIS?</h2>
+                    <h2 style={{ color: '#0056b3', marginBottom: '1.5rem' }}>{t('applyPage.whyTitle')}</h2>
                     <ul style={{ textAlign: 'left', marginBottom: '2rem', lineHeight: '1.8' }}>
-                        <li>🚀 Aktif projelerde yer alma imkanı</li>
-                        <li>🤝 Geniş bir network ağı</li>
-                        <li>🎓 Teknik ve mesleki eğitimler</li>
-                        <li>🌍 Uluslararası etkinliklere katılım</li>
-                        <li>🎉 Sosyal aktiviteler ve eğlenceli kulüp ortamı</li>
+                        {Array.isArray(whyList) && whyList.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
                     </ul>
 
                     <p style={{ marginBottom: '2rem', fontSize: '1.1rem' }}>
-                        Aşağıdaki butona tıklayarak başvuru formuna ulaşabilir ve kayıt işleminizi gerçekleştirebilirsiniz.
+                        {t('applyPage.ctaText')}
                     </p>
 
                     <button className="btn btn-primary" onClick={handleApplyClick} style={{ fontSize: '1.2rem', padding: '1rem 3rem' }}>
-                        Başvuru Formuna Git
+                        {t('applyPage.btnText')}
                     </button>
 
                     <p style={{ marginTop: '2rem', fontSize: '0.9rem', color: '#777' }}>
-                        Sorularınız için <a href="mailto:info@infoseis.com" style={{ color: '#00ccff' }}>info@infoseis.com</a> adresinden bize ulaşabilirsiniz.
+                        {t('applyPage.contactText')} <a href="mailto:info@infoseis.com" style={{ color: '#00ccff' }}>info@infoseis.com</a>
                     </p>
                 </div>
             </Section>

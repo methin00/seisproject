@@ -64,14 +64,14 @@ export const translations = {
             members: {
                 beratKaanAydin: { about: "Ekip içi disiplin ve iç ilişkiler süreçlerinden sorumlu yöneticimiz. Üyeler arası iletişimi düzenlemekte ve kulüp içi kuralların işleyişini takip etmektedir. Adil ve şeffaf bir yönetim anlayışını benimser. Ekip ruhunu korumak ve geliştirmek için sosyal etkinlikler organize eder. Çözüm odaklı yaklaşımıyla iç huzuru sağlar." },
                 metinCakmak: { about: "İstanbul doğumlu bir yazılım tutkunu olan Metin Çakmak, çocukluk yıllarından gelen teknoloji merakını zamanla profesyonel bir vizyona dönüştürmüştür. Web Geliştirme ve Veri Bilimi disiplinleri arasında güçlü bir köprü kuran Çakmak, SEIS IT Takım Lideri olarak ekibinin teknik kapasitesini dijital geleceğe yönelik projelerle yönetmektedir. Temel hedefi, teknik yetkinliklerini doğru liderlik stratejileriyle birleştirerek fark yaratan dijital deneyimler sunmaktır." },
-                esadBal: { about: "Sıradışı fikirlerin gerçeğe dönüşmesi için stratejiler geliştiren uzmanımız. Yenilikçi proje konseptleri tasarlar ve teknik fizibilite çalışmalarunu yürütür. Disiplinlerarası projelerde köprü görevi görür. Geleceğin teknolojilerine odaklanarak kulübümüzün Ar-Ge kapasitesini artırır. Yaratıcı düşünme metodolojilerini projelerimize uygular." },
+                esadBal: { about: "SEIS ailesinin bir üyesi olan Esad, IT ekibindeki inovasyon süreçlerini ve proje geliştirmelerini koordine etmektedir. Teknolojiye olan tutkusunu topluluğun yaratıcı ortamında somut çıktılara dönüştüren Esad, multidisipliner projelerde üstlendiği sorumluluklarla teknik yetkinliklerini geliştirirken kulübün büyümesine de katkı sağlamaktadır. Geleceğin mühendislik vizyonunu SEIS çatısı altında şekillendiren Esad, ekip arkadaşlarıyla birlikte öğrenme ve gelişim sürecine öncülük etmektedir." },
                 mehmetZahidGorgec: { about: "Kullanıcı deneyimi ve arayüz tasarımı konusundaki estetik vizyonuyla projelerimize değer katar. Kullanıcı dostu ve modern tasarımlar geliştirerek dijital etkileşimlerimizi güçlendirir. Marka kimliğimizin görsel dilini oluşturur. Piksellerin ötesinde, kullanıcıyı merkezine alan tasarım süreçlerini yönetir." },
-                zeynepCenik: { about: "Kulübümüzün dış dünyayla olan iletişim köprüsünü kuran koordinatörümüz. Marka bilinirliğini artırmak için stratejik iletişim planları hazırlar. Medya ilişkilerini yönetir ve kurumsal kimliğimizi temsil eder. Ağ kurma konusundaki yeteneğiyle kulübümüze yeni fırsatlar yaratır. Etkili iletişim teknikleriyle SEIS'i en iyi şekilde tanıtır." },
+                zeynepCenik: { about: "Sakarya Üniversitesi Kimya Bölümü öğrencisi olan Zeynep, SEIS bünyesinde PR & Marketing Coordinator olarak görev yapmaktadır. İletişimi yalnızca bir duyuru aracı değil, insanları ortak bir amaç etrafında birleştiren bir güç olarak gören Zeynep; dijital içerik üretimi, sosyal medya yönetimi ve etkinlik tanıtımı süreçlerini yönetmektedir. Temel hedefi, SEIS’in görünürlüğünü artırmak ve topluluk için samimi, sürdürülebilir ve güçlü bir iletişim ağı inşa etmektir." },
                 yagmurKarakaya: { about: "Sosyal medya platformlarımızdaki varlığımızı dinamik tutan yöneticimiz. İçerik ve etkileşim stratejileri geliştirerek topluluğumuzla sürekli bağ kurar. Güncel trendleri takip ederek yaratıcı paylaşımlar hazırlar. Analiz ve raporlama yaparak sosyal medya performansımızı optimize eder. Görsel ve metinsel uyumu yakalayarak marka algımızı güçlendirir." },
                 aleynaKaya: { about: "Kelimelerin gücünü görsel tasarımla birleştiren yöneticimiz. İçerik üretimi ve metin yazarlığı süreçlerini yöneterek mesajımızı etkili kılar. Görsel tasarım ekibiyle koordineli çalışarak bütünsel bir iletişim dili oluşturur. Hikaye anlatıcılığı teknikleriyle markamıza ruh katar. Dilin estetiğini tasarımlarımıza yansıtır." },
                 emreTurk: { about: "Saha operasyonları ve lojistik koordinasyonunun kilit ismidir. Etkinliklerin operasyonel planlamasını yaparak kusursuz işleyişi sağlar. Kaynakların verimli kullanılması için planlamalar yapar. Kriz durumlarında hızlı aksiyon alma yeteneğiyle operasyonel riskleri minimize eder. Süreç yönetiminde titiz bir çalışma sergiler." },
                 senanurBektas: { about: "Kurumsal kapasite ve dış ilişkiler koordinasyonunu yürütmektedir. İş birliği ağlarımızı genişleterek ortak projeler geliştirilmesi için çalışır. Stratejik ortaklıkların sürdürülebilirliğini sağlar. Kulübümüzün ekosistemdeki konumunu güçlendirecek adımlar atar. Profesyonel ağ yönetimi konusunda deneyimlidir." },
-                yagmurAktas: { about: "Etkinliklerimizin belgelenmesi ve koordinasyonunda aktif görev alır. Görsel ve işitsel arşivimizi oluşturarak tarihçemizi kayıt altına alır. Organizasyon anında akışı yöneterek ekibe destek olur. Prodüksiyon süreçlerini yöneterek etkinliklerimizin etkisini kalıcı kılar. Anı ölümsüzleştiren kareleri ve videoları yakalar." }
+                yagmurAktas: { about: "Sakarya Üniversitesi Mütercim ve Tercümanlık öğrencisi olan Yağmur, dil edinimi odaklı kariyer yolculuğunu müzik ve kodlama gibi farklı disiplinlerle zenginleştirmektedir. SEIS bünyesinde Event Documentation görevini üstlenen Yağmur, kulübün vizyonu doğrultusunda projeler geliştirerek hem bireysel yetkinliklerini hem de topluluğun standartlarını uluslararası düzeye taşımayı hedeflemektedir." }
             }
         },
         dialog: {
@@ -200,6 +200,26 @@ export const translations = {
                 { title: "IT Workshop", desc: "HTML ve CSS temellerini öğrenerek web dünyasına ilk adımı attığımız atölye." },
                 { title: "Quiz Night", desc: "Popüler dizilerden sorularla bilgimizi test ettiğimiz ödüllü ve eğlenceli yarışma." }
             ]
+        },
+        applyPage: {
+            title: "Başvuru Yap",
+            description: "SEIS ailesinin bir parçası olmak için ilk adımı atın.",
+            whyTitle: "Neden SEIS?",
+            whyList: [
+                "🚀 Aktif projelerde yer alma imkanı",
+                "🤝 Geniş bir network ağı",
+                "🎓 Teknik ve mesleki eğitimler",
+                "🌍 Uluslararası etkinliklere katılım",
+                "🎉 Sosyal aktiviteler ve eğlenceli kulüp ortamı"
+            ],
+            ctaText: "Aşağıdaki butona tıklayarak başvuru formuna ulaşabilir ve kayıt işleminizi gerçekleştirebilirsiniz.",
+            btnText: "Başvuru Formuna Git",
+            contactText: "Sorularınız için",
+            seo: {
+                title: "Başvuru Yap",
+                description: "SEIS ailesine katılmak için başvuru yapın. Geleceğin mühendisleri arasına katılın.",
+                keywords: "Başvuru, Üye Ol, Kayıt Formu"
+            }
         }
     },
     en: {
@@ -267,14 +287,14 @@ export const translations = {
             members: {
                 beratKaanAydin: { about: "Our executive responsible for internal discipline and relations processes. Regulates communication between members and monitors the operation of internal club rules. Adopts a fair and transparent management approach. Organizes social events to protect and improve team spirit. Ensures internal peace with a solution-oriented approach." },
                 metinCakmak: { about: "Metin Çakmak, a software enthusiast born in Istanbul, has transformed his childhood curiosity for technology into a professional vision over time. Building a strong bridge between Web Development and Data Science disciplines, Çakmak manages his team's technical capacity with projects focused on the digital future as the SEIS IT Team Leader. His main goal is to offer digital experiences that make a difference by combining his technical competencies with the right leadership strategies." },
-                esadBal: { about: "Our specialist who develops strategies to turn extraordinary ideas into reality. Designs innovative project concepts and conducts technical feasibility studies. Acts as a bridge in interdisciplinary projects. Increases our club's R&D capacity by focusing on future technologies. Applies creative thinking methodologies to our projects." },
+                esadBal: { about: "A member of the SEIS family, Esad coordinates innovation processes and project developments in the IT team. Transforming his passion for technology into tangible outputs in the creative environment of the community, Esad contributes to the growth of the club while developing his technical competencies with the responsibilities he undertakes in multidisciplinary projects. Shaping the engineering vision of the future under the roof of SEIS, Esad leads the learning and development process together with his teammates." },
                 mehmetZahidGorgec: { about: "Adds value to our projects with his aesthetic vision in user experience and interface design. Strengthens our digital interactions by developing user-friendly and modern designs. Creates the visual language of our brand identity. Manages design processes centered on the user, beyond pixels." },
-                zeynepCenik: { about: "Our coordinator who builds the communication bridge of our club with the outside world. Prepares strategic communication plans to increase brand awareness. Manages media relations and represents our corporate identity. Creates new opportunities for our club with her networking ability. Introduces SEIS in the best way with effective communication techniques." },
+                zeynepCenik: { about: "Zeynep, a Chemistry student at Sakarya University, serves as the PR & Marketing Coordinator at SEIS. Viewing communication not just as a means of announcement but as a power uniting people around a common goal, Zeynep manages digital content production, social media management, and event promotion processes. Her main goal is to increase SEIS's visibility and build a sincere, sustainable, and strong communication network for the community." },
                 yagmurKarakaya: { about: "Our executive who keeps our presence on social media platforms dynamic. Constantly connects with our community by developing content and interaction strategies. Prepares creative posts by following current trends. Optimizes our social media performance by analyzing and reporting. Strengthens our brand perception by capturing visual and textual harmony." },
                 aleynaKaya: { about: "Our executive who combines the power of words with visual design. Makes our message effective by managing content production and copywriting processes. Creates a holistic communication language by working in coordination with the visual design team. Adds soul to our brand with storytelling techniques. Reflects the aesthetics of language in our designs." },
                 emreTurk: { about: "Key figure in field operations and logistics coordination. Ensures flawless operation by making operational planning of events. Plans for the efficient use of resources. Minimizes operational risks with the ability to take quick action in crisis situations. Displays meticulous work in process management." },
                 senanurBektas: { about: "Conducts corporate capacity and external relations coordination. Works to develop joint projects by expanding our cooperation networks. Ensures the sustainability of strategic partnerships. Takes steps to strengthen our club's position in the ecosystem. Experienced in professional network management." },
-                yagmurAktas: { about: "Takes an active role in the documentation and coordination of our events. Records our history by creating our visual and audio archive. Supports the team by managing the flow during the organization. Makes the impact of our events permanent by managing production processes. Captures frames and videos that immortalize the moment." }
+                yagmurAktas: { about: "Yağmur, a student of Translation and Interpreting at Sakarya University, enriches her career journey focused on language acquisition with different disciplines such as music and coding. Undertaking the Event Documentation role within SEIS, Yağmur aims to carry both her individual competencies and the community's standards to an international level by developing projects in line with the club's vision." }
             }
         },
         dialog: {
@@ -403,6 +423,26 @@ export const translations = {
                 { title: "IT Workshop", desc: "A workshop where we took the first step into the web world by learning HTML and CSS basics." },
                 { title: "Quiz Night", desc: "An award-winning and fun competition where we tested our knowledge with questions from popular TV series." }
             ]
+        },
+        applyPage: {
+            title: "Apply Now",
+            description: "Take the first step to becoming part of the SEIS family.",
+            whyTitle: "Why SEIS?",
+            whyList: [
+                "🚀 Opportunity to take part in active projects",
+                "🤝 A wide network",
+                "🎓 Technical and professional trainings",
+                "🌍 Participation in international events",
+                "🎉 Social activities and a fun club environment"
+            ],
+            ctaText: "You can reach the application form and complete your registration by clicking the button below.",
+            btnText: "Go to Application Form",
+            contactText: "For your questions",
+            seo: {
+                title: "Apply Now",
+                description: "Apply to join the SEIS family. Join the engineers of the future.",
+                keywords: "Apply, Join, Registration Form"
+            }
         }
     }
 };

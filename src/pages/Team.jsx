@@ -26,7 +26,7 @@ const teamMembers = [
         name: "Esad Bal",
         role: "Innovation & Project Development Specialist",
         department: "Elektrik Elektronik Mühendisliği",
-        email: "esad.bal@infoseis.com",
+        email: "esad.bal@ogr.sakarya.edu.tr",
     },
     {
         id: "mehmetZahidGorgec",
@@ -75,7 +75,7 @@ const teamMembers = [
         name: "Yağmur Aktaş",
         role: "Event Documentation & Coordination",
         department: "İngilizce Mütercim ve Tercümanlık",
-        email: "yagmur.aktas@infoseis.com",
+        email: "suncalypse@gmail.com",
     },
 ];
 
@@ -124,27 +124,65 @@ export default function Team() {
                                 display: 'flex',
                                 flexDirection: 'column',
                                 alignItems: 'center',
-                                justifyContent: 'center'
+                                justifyContent: 'space-between',
+                                height: '100%'
                             }}
                         >
-                            <div style={{
-                                width: '80px',
-                                height: '80px',
-                                borderRadius: '50%',
-                                backgroundColor: '#f1f5f9',
-                                marginBottom: '1rem',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: '#94a3b8',
-                                fontSize: '1.5rem',
-                                fontWeight: '600'
-                            }}>
-                                {member.name.charAt(0)}
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                                <div style={{
+                                    width: '80px',
+                                    height: '80px',
+                                    borderRadius: '50%',
+                                    backgroundColor: '#f1f5f9',
+                                    marginBottom: '1rem',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    color: '#94a3b8',
+                                    fontSize: '1.5rem',
+                                    fontWeight: '600',
+                                    overflow: 'hidden',
+                                    position: 'relative'
+                                }}>
+                                    {true ? ( // Always try to load image
+                                        <img
+                                            src={`/members/${member.id}.jpeg`}
+                                            alt={member.name}
+                                            onError={(e) => {
+                                                if (e.target.src.endsWith('.jpeg')) {
+                                                    e.target.src = e.target.src.replace('.jpeg', '.jpg');
+                                                } else {
+                                                    e.target.onerror = null;
+                                                    e.target.style.display = 'none';
+                                                    e.target.nextSibling.style.display = 'flex';
+                                                }
+                                            }}
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                            loading="lazy"
+                                        />
+                                    ) : null}
+                                    <div style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#94a3b8',
+                                        fontSize: '1.5rem',
+                                        fontWeight: '600',
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        backgroundColor: '#f1f5f9',
+                                        zIndex: -1
+                                    }}>
+                                        {member.name.charAt(0)}
+                                    </div>
+                                </div>
+                                <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem', color: '#334155' }}>{member.name}</h4>
+                                <p style={{ fontSize: '0.9rem', color: '#64748b' }}>{member.role}</p>
                             </div>
-                            <h4 style={{ fontSize: '1.1rem', marginBottom: '0.25rem', color: '#334155' }}>{member.name}</h4>
-                            <p style={{ fontSize: '0.9rem', color: '#64748b' }}>{member.role}</p>
-                            <p style={{ fontSize: '0.8rem', color: '#94a3b8', marginTop: '0.5rem', fontWeight: '400' }}>{t('team.clickInfo')}</p>
+                            <p style={{ fontSize: '0.8rem', color: '#94a3b8', marginTop: '1rem', fontWeight: '400' }}>{t('team.clickInfo')}</p>
                         </div>
                     ))}
                 </div>

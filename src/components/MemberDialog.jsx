@@ -23,8 +23,39 @@ export default function MemberDialog({ member, isOpen, onClose }) {
 
                 <div className="modal-body">
                     <div className="modal-header">
-                        <div className="modal-avatar">
-                            {member.name.charAt(0)}
+                        <div className="modal-avatar" style={{ position: 'relative', overflow: 'hidden' }}>
+                            {true ? ( // Always try to load image
+                                <img
+                                    src={`/members/${member.id}.jpeg`}
+                                    alt={member.name}
+                                    onError={(e) => {
+                                        if (e.target.src.endsWith('.jpeg')) {
+                                            e.target.src = e.target.src.replace('.jpeg', '.jpg');
+                                        } else {
+                                            e.target.onerror = null;
+                                            e.target.style.display = 'none';
+                                            e.target.nextSibling.style.display = 'flex';
+                                        }
+                                    }}
+                                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                    loading="lazy"
+                                />
+                            ) : null}
+                            <div style={{
+                                width: '100%',
+                                height: '100%',
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                zIndex: -1,
+                                width: '100%',
+                                height: '100%'
+                            }}>
+                                {member.name.charAt(0)}
+                            </div>
                         </div>
                         <div className="modal-title">
                             <h2>{member.name}</h2>

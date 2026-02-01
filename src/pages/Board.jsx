@@ -13,7 +13,7 @@ const boardMembers = [
         role: "president",
         department: "Elektrik Elektronik Mühendisliği",
         email: "ensar.davud@ogr.sakarya.edu.tr",
-        img: "https://via.placeholder.com/200",
+        img: true,
         bio: "ensar.davud@ogr.sakarya.edu.tr"
     },
     {
@@ -22,7 +22,7 @@ const boardMembers = [
         role: "vicePresident",
         department: "Elektrik Elektronik Mühendisliği",
         email: "gokhan.uygun@ogr.sakarya.edu.tr",
-        img: "https://via.placeholder.com/200",
+        img: true,
         bio: "gokhan.uygun@ogr.sakarya.edu.tr"
     },
     {
@@ -31,7 +31,7 @@ const boardMembers = [
         role: "hr",
         department: "Elektrik Elektronik Mühendisliği",
         email: "gursel.gecir@ogr.sakarya.edu.tr",
-        img: "https://via.placeholder.com/200",
+        img: true,
         bio: "gursel.gecir@ogr.sakarya.edu.tr"
     },
     {
@@ -40,7 +40,7 @@ const boardMembers = [
         role: "event",
         department: "Elektrik Elektronik Mühendisliği",
         email: "enes.ataman@infoseis.com",
-        img: "https://via.placeholder.com/200",
+        img: true,
         bio: "enes.ataman@infoseis.com"
     },
     {
@@ -49,7 +49,7 @@ const boardMembers = [
         role: "fund",
         department: "Makine Mühendisliği",
         email: "halil.bodur@infoseis.com",
-        img: "https://via.placeholder.com/200",
+        img: true,
         bio: "halil.bodur@infoseis.com"
     },
 ];
@@ -84,8 +84,8 @@ export default function Board() {
 
             <Section id="board" title={t('board.title')}>
                 <div className="card-grid" style={{
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                    gap: '2.5rem'
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', // Reduced min-width to fit 5 items
+                    gap: '1.5rem' // Reduced gap to help fit items
                 }}>
                     {boardMembers.map((member, index) => (
                         <div
@@ -95,28 +95,67 @@ export default function Board() {
                             onClick={() => openMemberDetails(member)}
                             style={{
                                 textAlign: 'center',
-                                padding: '3rem 2rem',
+                                padding: '2rem 1rem', // Reduced padding
                                 border: '1px solid #bfdbfe',
-                                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
+                                boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                                height: '100%'
                             }}
                         >
-                            <div style={{
-                                width: '150px',
-                                height: '150px',
-                                borderRadius: '50%',
-                                backgroundColor: '#e0f2fe',
-                                margin: '0 auto 1.5rem',
-                                overflow: 'hidden',
-                                border: '4px solid #fff',
-                                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
-                            }}>
-                                <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#0056b3', fontSize: '3rem', fontWeight: 'bold' }}>
-                                    {member.name.charAt(0)}
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
+                                <div style={{
+                                    width: '120px', // Slightly smaller image to fit better
+                                    height: '120px',
+                                    borderRadius: '50%',
+                                    backgroundColor: '#e0f2fe',
+                                    margin: '0 auto 1rem',
+                                    overflow: 'hidden',
+                                    border: '3px solid #fff',
+                                    boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                                    position: 'relative'
+                                }}>
+                                    {member.img ? (
+                                        <img
+                                            src={`/members/${member.id}.jpeg`}
+                                            alt={member.name}
+                                            onError={(e) => {
+                                                if (e.target.src.endsWith('.jpeg')) {
+                                                    e.target.src = e.target.src.replace('.jpeg', '.jpg');
+                                                } else {
+                                                    e.target.onerror = null;
+                                                    e.target.style.display = 'none';
+                                                    e.target.nextSibling.style.display = 'flex';
+                                                }
+                                            }}
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                                            loading="lazy"
+                                        />
+                                    ) : null}
+                                    <div style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        display: 'flex',
+                                        alignItems: 'center',
+                                        justifyContent: 'center',
+                                        color: '#0056b3',
+                                        fontSize: '2.5rem',
+                                        fontWeight: 'bold',
+                                        position: 'absolute',
+                                        top: 0,
+                                        left: 0,
+                                        backgroundColor: '#e0f2fe',
+                                        zIndex: -1
+                                    }}>
+                                        {member.name.charAt(0)}
+                                    </div>
                                 </div>
+                                <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem', color: '#1e40af' }}>{member.name}</h3>
+                                <p style={{ fontWeight: 'bold', color: '#0056b3', marginBottom: '0.5rem', fontSize: '1rem' }}>{t(`board.roles.${member.role}`)}</p>
                             </div>
-                            <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: '#1e40af' }}>{member.name}</h3>
-                            <p style={{ fontWeight: 'bold', color: '#0056b3', marginBottom: '0.5rem', fontSize: '1.1rem' }}>{t(`board.roles.${member.role}`)}</p>
-                            <p style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: '400' }}>{t('board.clickInfo')}</p>
+                            <p style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: '400', marginTop: '1rem' }}>{t('board.clickInfo')}</p>
                         </div>
                     ))}
                 </div>
