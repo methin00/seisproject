@@ -8,18 +8,32 @@ import { useLanguage } from "../context/LanguageContext";
 
 const teamMembers = [
     {
-        id: "beratKaanAydin",
-        name: "Berat Kaan Aydın",
-        role: "Discipline & Internal Relations Executive",
-        department: "Elektrik Elektronik Mühendisliği",
-        email: "berat.aydin@infoseis.com",
-    },
-    {
         id: "metinCakmak",
         name: "Metin Çakmak",
         role: "IT Coordinator",
         department: "Yazılım Mühendisliği",
         email: "metin-cakmak2005@hotmail.com",
+    },
+    {
+        id: "zeynepCenik",
+        name: "Zeynep Cenik",
+        role: "PR Coordinator",
+        department: "Kimya",
+        email: "zeynepcenik06@gmail.com",
+    },
+    {
+        id: "senanurBektas",
+        name: "Senanur Bektaş",
+        role: "External Relations & Corporate Communications Coordinator",
+        department: "İngilizce Mütercim ve Tercümanlık",
+        email: "senanur.bektas@infoseis.com",
+    },
+    {
+        id: "beratKaanAydin",
+        name: "Berat Kaan Aydın",
+        role: "Discipline & Internal Relations Executive",
+        department: "Elektrik Elektronik Mühendisliği",
+        email: "berat.aydin@infoseis.com",
     },
     {
         id: "esadBal",
@@ -34,13 +48,6 @@ const teamMembers = [
         role: "UI/UX & Digital Experience Specialist",
         department: "Bilgisayar Mühendisliği",
         email: "mehmet.gorgec@infoseis.com",
-    },
-    {
-        id: "zeynepCenik",
-        name: "Zeynep Cenik",
-        role: "PR Coordinator",
-        department: "Kimya",
-        email: "zeynep.cenik@infoseis.com",
     },
     {
         id: "yagmurKarakaya",
@@ -62,13 +69,6 @@ const teamMembers = [
         role: "Operations & Coordination Executive",
         department: "Bilgisayar Mühendisliği",
         email: "emre.turk@infoseis.com",
-    },
-    {
-        id: "senanurBektas",
-        name: "Senanur Bektaş",
-        role: "External Relations & Corporate Communications Coordinator",
-        department: "İngilizce Mütercim ve Tercümanlık",
-        email: "senanur.bektas@infoseis.com",
     },
     {
         id: "yagmurAktas",

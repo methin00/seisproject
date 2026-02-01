@@ -43,7 +43,7 @@ export const translations = {
             clickInfo: "Detaylı Bilgi İçin Tıkla",
             roles: {
                 president: "President",
-                vicePresident: "Vice President",
+                vicePresident: "Vice President & HR Coordinator",
                 hr: "Recruitment & Development Executive",
                 event: "Event Coordinator",
                 fund: "Fundraising Coordinator"
@@ -266,7 +266,7 @@ export const translations = {
             clickInfo: "Click for Details",
             roles: {
                 president: "President",
-                vicePresident: "Vice President",
+                vicePresident: "Vice President & HR Coordinator",
                 hr: "Recruitment & Development Executive",
                 event: "Event Coordinator",
                 fund: "Fundraising Coordinator"

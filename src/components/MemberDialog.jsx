@@ -50,9 +50,7 @@ export default function MemberDialog({ member, isOpen, onClose }) {
                                 position: 'absolute',
                                 top: 0,
                                 left: 0,
-                                zIndex: -1,
-                                width: '100%',
-                                height: '100%'
+                                zIndex: -1
                             }}>
                                 {member.name.charAt(0)}
                             </div>
