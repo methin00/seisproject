@@ -26,7 +26,7 @@ const teamMembers = [
         name: "Senanur Bektaş",
         role: "External Relations & Corporate Communications Coordinator",
         department: "translation",
-        email: "senanur.bektas@infoseis.com",
+        email: "bektassenanur7@gmail.com",
     },
     {
         id: "beratKaanAydin",
