@@ -43,15 +43,7 @@ const boardMembers = [
         img: true,
         bio: "enes.ataman@infoseis.com"
     },
-    {
-        id: "halilBodur",
-        name: "Halil Bodur",
-        role: "fund",
-        department: "mechanicalEng",
-        email: "halil.bodur@infoseis.com",
-        img: true,
-        bio: "halil.bodur@infoseis.com"
-    },
+
 ];
 
 export default function Board() {
