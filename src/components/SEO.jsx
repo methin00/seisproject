@@ -39,8 +39,8 @@ export default function SEO({ title, description, keywords, type = 'website', im
         "@type": "Organization",
         "name": "Sakarya Engineering Innovation Society",
         "alternateName": "SEIS",
-        "url": "https://seis.sakarya.edu.tr",
-        "logo": "https://seis.sakarya.edu.tr/seis.svg",
+        "url": "https://infoseis.com",
+        "logo": "https://infoseis.com/seis.svg",
         "description": metaDescription,
         "address": {
             "@type": "PostalAddress",
