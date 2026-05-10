@@ -196,18 +196,20 @@ export const translations = {
             pastTitle: "Geçmiş Etkinlikler",
             noEvents: "Şu an planlanmış yeni bir etkinlik bulunmamaktadır. Takipte kalın!",
             upcoming: [
+                { title: "Teknik Gezi", desc: "Otokar üretim tesislerine gerçekleştireceğimiz teknik gezide, savunma ve otomotiv sektöründeki üretim süreçlerini yerinde inceleme, mühendislik uygulamalarını yakından gözlemleme ve sektör profesyonelleriyle birebir iletişim kurma fırsatı elde ediyoruz." },
                 { title: "Bahar Partisi", desc: "Bahara hoşgeldin diyerek enerjimizi tazelediğimiz eğlenceli bir buluşma." },
-                { title: "Hackathon", desc: "Yenilikçi fikirler üreteceğimiz ve kıyasıya yarışacağımız 48 saatlik maraton." },
-                { title: "Tasarım Workshop", desc: "Tasarımın temellerini öğrenip uygulayabileceğimiz interaktif bir atölye." },
-                { title: "Kadın Girişimciler Zirvesi", desc: "İş dünyasında kadının gücüne ve Kadınlar Günü'ne vurgu yapan ilham verici zirve." },
-                { title: "Film Gecesi", desc: "Yoğun tempoya kısa bir mola verip birlikte film izleyerek soluklandığımız keyifli akşam." },
-                { title: "MUN", desc: "Model United Nations simülasyonu ile diplomasi ve dünya sorunlarını tartışıyoruz." },
-                { title: "Aileler Yarışıyor", desc: "Ekiplerin eğlenceli sorularla kıyasıya mücadele ettiği keyifli yarışma formatı." }
+                { title: "MUN", desc: "Model United Nations simülasyonu ile diplomasi ve dünya sorunlarını tartışıyoruz." }
             ],
             past: [
+                { title: "Tanıtım Toplantısı", desc: "Kulübümüzün tanıtımını yaparak yeni üyelerimizi ailemize dahil ettiğimiz buluşma." },
                 { title: "Hoşgeldin Partisi", desc: "Yeni döneme ve yeni arkadaşlarımıza merhaba dediğimiz tanışma partisi." },
+                { title: "Quiz Night", desc: "Popüler dizilerden sorularla bilgimizi test ettiğimiz ödüllü ve eğlenceli yarışma." },
                 { title: "IT Workshop", desc: "HTML ve CSS temellerini öğrenerek web dünyasına ilk adımı attığımız atölye." },
-                { title: "Quiz Night", desc: "Popüler dizilerden sorularla bilgimizi test ettiğimiz ödüllü ve eğlenceli yarışma." }
+                { title: "Quiz Night 2", desc: "Popüler dizilerden sorularla bilgimizi test ettiğimiz ödüllü ve eğlenceli yarışma." },
+                { title: "Greydec", desc: "IFF savunma teknolojileri kapsamında çeşitli senaryolara yenilikçi çözümler geliştirdiğimiz, projelerimizi alanında uzman jürilere kongre ortamında sunma fırsatı bulduğumuz prestijli bir organizasyon." },
+                { title: "Friends Night", desc: "Popüler dizilerden sorularla bilgimizi test ettiğimiz ödüllü ve eğlenceli yarışma." },
+                { title: "IT Workshop 2", desc: "n8n ve prompt temellerini öğrenerek otomasyon dünyasına ilk adımı attığımız atölye." },
+
             ]
         },
         applyPage: {
