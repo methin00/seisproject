@@ -8,40 +8,76 @@ import { useLanguage } from "../context/LanguageContext";
 
 const boardMembers = [
     {
-        id: "ensarDavut",
-        name: "Ensar Davud",
-        role: "president",
-        department: "electricalElectronicsEng",
-        email: "ensar.davud@ogr.sakarya.edu.tr",
-        img: true,
-        bio: "ensar.davud@ogr.sakarya.edu.tr"
-    },
-    {
-        id: "gokhanBatinUygun",
-        name: "Gökhan Batın Uygun",
-        role: "vicePresident",
-        department: "electricalElectronicsEng",
-        email: "gokhan.uygun@ogr.sakarya.edu.tr",
-        img: true,
-        bio: "gokhan.uygun@ogr.sakarya.edu.tr"
-    },
-    {
         id: "gurselGecir",
         name: "Gürsel Gecir",
-        role: "hr",
+        role: "president",
         department: "electricalElectronicsEng",
         email: "gursel.gecir@ogr.sakarya.edu.tr",
         img: true,
         bio: "gursel.gecir@ogr.sakarya.edu.tr"
     },
     {
-        id: "enesAtaman",
-        name: "Enes Ataman",
-        role: "event",
-        department: "electricalElectronicsEng",
-        email: "enes.ataman@infoseis.com",
+        id: "mehmetZahidGorgec",
+        name: "Mehmet Zahid Görgeç",
+        role: "itCoordinator",
+        department: "computerEng",
+        email: "mehmetzahidgorgec@gmail.com",
         img: true,
-        bio: "enes.ataman@infoseis.com"
+        bio: "mehmetzahidgorgec@gmail.com"
+    },
+    {
+        id: "beratKaanAydin",
+        name: "Berat Kaan Aydın",
+        role: "vicePresident",
+        department: "electricalElectronicsEng",
+        email: "berat.aydin@infoseis.com",
+        img: true,
+        bio: "berat.aydin@infoseis.com"
+    },
+    {
+        id: "ensarDavut",
+        name: "Ensar Davud",
+        role: "founderAndSupervisoryBoardMember",
+        department: "electricalElectronicsEng",
+        email: "ensar.davud@ogr.sakarya.edu.tr",
+        img: true,
+        bio: "ensar.davud@ogr.sakarya.edu.tr"
+    },
+    {
+        id: "senanurBektas",
+        name: "Senanur Bektaş",
+        role: "externalRelationsAndCorporateCommunicationsCoordinator",
+        department: "translation",
+        email: "bektassenanur7@gmail.com",
+        img: true,
+        bio: "bektassenanur7@gmail.com"
+    },
+    {
+        id: "zeynepCenik",
+        name: "Zeynep Cenik",
+        role: "directorOfPublicRelationsAndMarketing",
+        department: "chemistry",
+        email: "zeynepcenik06@gmail.com",
+        img: true,
+        bio: "zeynepcenik06@gmail.com"
+    },
+    {
+        id: "nurcinVatansever",
+        name: "Nurçin Vatansever",
+        role: "departmentOfServicesAndEventCoordinator",
+        department: "industryEng",
+        email: "nurcinzeynep5@gmail.com",
+        img: true,
+        bio: "nurcinzeynep5@gmail.com"
+    },
+    {
+        id: "bilgehanYetkin",
+        name: "Bilgehan Yetkin",
+        role: "fund",
+        department: "informationSystemsEng",
+        email: "xyz@gmail.com",
+        img: true,
+        bio: "xyz@gmail.com"
     },
 
 ];
